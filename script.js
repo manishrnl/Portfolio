@@ -37,14 +37,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form submission
-const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', (e) => {
+document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Here you would typically handle the form submission
-    // For now, we'll just show an alert
-    alert('Thank you for your message! I will get back to you soon.');
-    contactForm.reset();
+    const formData = new FormData(this);
+    const data = {};
+    formData.forEach((value, key) => data[key] = value);
+    
+    fetch(this.action, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = 'thanks.html';
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 });
 
 // Add animation on scroll
