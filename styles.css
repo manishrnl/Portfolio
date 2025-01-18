@@ -260,30 +260,101 @@ nav {
 }
 
 .skills {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
-.skill-tags {
+.skills h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.skills-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1.5rem;
+    justify-content: center;
 }
 
-.skill-tags span {
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    color: var(--light-text);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #666;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
+    cursor: default;
 }
 
-.skill-tags span:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+.skill-item i {
+    font-size: 1.3rem;
+}
+
+.skill-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover .fa-html5 {
+    color: #e34f26;
+}
+
+.skill-item:hover .fa-css3 {
+    color: #264de4;
+}
+
+.skill-item:hover .fa-code {
+    color: #f7df1e;
+}
+
+.skill-item:hover .fa-coffee {
+    color: #f89820;
+}
+
+.skill-item:hover .fa-terminal {
+    color: #68a063;
+}
+
+.skill-item:hover .fa-python {
+    color: #3776ab;
+}
+
+.skill-item:hover .fa-mobile {
+    color: #3ddc84;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        gap: 0.8rem;
+    }
+    
+    .skill-item {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .skill-item i {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        gap: 0.6rem;
+    }
+    
+    .skill-item {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .skill-item i {
+        font-size: 1.1rem;
+    }
 }
 
 /* Projects Section */
