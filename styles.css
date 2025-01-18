@@ -377,8 +377,18 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.9);
+    color: var(--text-color);
+    letter-spacing: 0.5px;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 #contact-form input:focus,
@@ -386,11 +396,15 @@ nav {
     outline: none;
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 3px rgba(0, 159, 253, 0.1);
+    background: rgba(255, 255, 255, 1);
 }
 
 #contact-form textarea {
     height: 150px;
     resize: vertical;
+    line-height: 1.6;
+    min-height: 120px;
+    max-height: 300px;
 }
 
 #contact-form button {
