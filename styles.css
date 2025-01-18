@@ -369,7 +369,9 @@ nav {
 
 /* Projects Section */
 .projects {
-   
+
+    text-align: center;
+
     padding: 8rem 2rem;
     background: linear-gradient(135deg, #f6f9fc, #f1f4f8);
 }
@@ -431,6 +433,10 @@ nav {
     padding: 1.5rem;
     border: 1px solid var(--glass-border);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure the card takes the full height */
 }
 
 .project-card:hover {
@@ -461,6 +467,7 @@ nav {
     transform: translateX(100%);
 }
 
+
 .project-card h3 {
     padding: 1.5rem;
     color: var(--primary-color);
@@ -471,6 +478,7 @@ nav {
     padding: 0 1.5rem 1.5rem;
     color: var(--text-color);
     opacity: 0.8;
+    flex-grow: 1; /* Make the paragraph take the available space */
 }
 
 .project-links {
@@ -478,6 +486,7 @@ nav {
     display: flex;
     gap: 1.5rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: flex-start; /* Ensure the buttons stay at the bottom */
 }
 
 .project-links a {
@@ -497,7 +506,14 @@ nav {
     border-radius: 20px; /* Rounded corners */
     transition: background-color 0.3s; /* Smooth transition for hover */
     font-size: 18px; /* Increase font size */
-    color: white;
+    color: white;    
+}
+.home-button a{
+    color: white; 
+}
+
+.home-button i {
+    margin-right: 8px; /* Space between icon and text */   
 }
 .home-button a{
     color: white;
