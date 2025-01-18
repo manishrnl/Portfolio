@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to Manish's Portfolio - Full Stack Developer showcasing creative projects and professional experience in web development.">
     <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="images/Manish.png">
+    <link rel="apple-touch-icon" href="images/Manish.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <nav>
-            <div class="logo">Portfolio</div>
+            <div class="logo">
+                <img src="images/Manish.png" alt="Manish" class="profile-img">
+                <span>Manish</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -34,7 +39,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Welcome to My Portfolio</h1>
-            <p>Full Stack Developer | Creative Problem Solver</p>
+            <p>Full Stack Developer |Android developer | Desktop app Developer using JAVA | Creative Problem Solver</p>
             <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
     </section>
@@ -51,9 +56,11 @@
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
-                        <span>React</span>
+                        <span>Java</span>
                         <span>Node.js</span>
-                        <span>Python</span>
+                         <span>Python</span>
+                        <span>Android development</span>
+                       
                     </div>
                 </div>
             </div>
@@ -65,21 +72,25 @@
         <h2>My Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <div class="project-image"></div>
-                <h3>Project 1</h3>
-                <p>A brief description of the project and its key features.</p>
+                <div class="project-images">
+                    <img src="images/Login_Screen.png" alt="Bank Management System Login Screen" class="project-img">
+                    <img src="images/Deposit.png" alt="Bank Management System Deposit Screen" class="project-img">
+                </div>
+                <h3>Bank Management System</h3>
+                <p>This is similar to the functionality of how ATM works</p>
                 <div class="project-links">
-                    <a href="#" target="_blank">Live Demo</a>
-                    <a href="#" target="_blank">GitHub</a>
+                    <a href="https://github.com/manishrnl/Bank_Management_System" target="_blank">GitHub</a>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image"></div>
-                <h3>Project 2</h3>
-                <p>A brief description of the project and its key features.</p>
+                <div class="project-images">
+                    <img src="images/Main_Screen.png" alt="Website Images" class="project-img">
+                    <img src="images/Help.png" alt="Website Images" class="project-img">
+                </div>
+                <h3>Website</h3>
+                <p>This is this website </p>
                 <div class="project-links">
-                    <a href="#" target="_blank">Live Demo</a>
-                    <a href="#" target="_blank">GitHub</a>
+                    <a href="https://github.com/manishrnl/Portfolio" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
@@ -89,32 +100,39 @@
     <section id="contact" class="contact">
         <h2>Get in Touch</h2>
         <div class="contact-content">
-            <form id="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
+            <form id="contact-form" action="https://formsubmit.co/newemail12k4@gmail.com" method="POST">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display:none">
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Success Page -->
+                <input type="hidden" name="_next" value="https://manishrnl.netlify.app/thanks.html">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
             <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=100011121437261" target="_blank" class="social-link facebook">
-                    <i class="fab fa-facebook"></i>
-                    <span class="social-text">Facebook</span>
+                <a href="https://www.facebook.com/profile.php?id=100011121437261" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                    Facebook
                 </a>
-                <a href="https://www.instagram.com/manish.rnl/#" target="_blank" class="social-link instagram">
-                    <i class="fab fa-instagram"></i>
-                    <span class="social-text">Instagram</span>
+                <a href="https://www.instagram.com/manish.rnl/#" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                    Instagram
                 </a>
-                <a href="https://www.linkedin.com/in/manish-kumar-2846a8145?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link linkedin">
-                    <i class="fab fa-linkedin"></i>
-                    <span class="social-text">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/manish-kumar-2846a8145?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                    LinkedIn
                 </a>
-                <a href="https://x.com/manishrnl" target="_blank" class="social-link twitter">
-                    <i class="fab fa-twitter"></i>
-                    <span class="social-text">Twitter</span>
+                <a href="https://x.com/manishrnl" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                    Twitter
                 </a>
-                <a href="https://github.com/manishrnl" target="_blank" class="social-link github">
-                    <i class="fab fa-github"></i>
-                    <span class="social-text">GitHub</span>
+                <a href="https://github.com/manishrnl" target="_blank">
+                    <i class="fa fa-github"></i>
+                    GitHub
                 </a>
             </div>
         </div>

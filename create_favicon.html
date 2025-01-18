@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Round Favicon</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="32" height="32"></canvas>
+    <div>Right-click the canvas and save as favicon.png</div>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Create circular mask
+        ctx.beginPath();
+        ctx.arc(16, 16, 15, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+        
+        // Load and draw image
+        const img = new Image();
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0, 32, 32);
+            
+            // Add a subtle border
+            ctx.strokeStyle = '#ffffff';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.arc(16, 16, 15, 0, Math.PI * 2);
+            ctx.stroke();
+        };
+        img.src = 'images/Manish.png';
+    </script>
+</body>
+</html>

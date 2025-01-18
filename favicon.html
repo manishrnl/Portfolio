@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Rounded Favicon</title>
+</head>
+<body>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <img id="result" style="border: 1px solid #ccc;">
+    <script>
+        window.onload = function() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            
+            img.onload = function() {
+                // Set canvas size to 32x32 (standard favicon size)
+                canvas.width = 32;
+                canvas.height = 32;
+                
+                // Create circular clipping path
+                ctx.beginPath();
+                ctx.arc(16, 16, 16, 0, Math.PI * 2, true);
+                ctx.closePath();
+                ctx.clip();
+                
+                // Draw the image
+                ctx.drawImage(img, 0, 0, 32, 32);
+                
+                // Show the result
+                document.getElementById('result').src = canvas.toDataURL();
+            };
+            
+            img.src = 'images/Manish.png';
+        };
+    </script>
+    <p>Right-click on the image and save it as 'favicon.png' in your portfolio folder</p>
+</body>
+</html>
