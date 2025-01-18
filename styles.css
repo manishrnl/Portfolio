@@ -381,7 +381,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
