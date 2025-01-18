@@ -307,8 +307,16 @@ nav {
     color: #264de4;
 }
 
-.skill-item:hover .fa-code {
-    color: #f7df1e;
+.skill-item:hover .js-icon {
+    color: #f7df1e; /* JavaScript yellow */
+}
+
+.skill-item:hover .c-icon {
+    color: #555555; /* C dark gray */
+}
+
+.skill-item:hover .cpp-icon {
+    color: #00599C; /* C++ blue */
 }
 
 .skill-item:hover .fa-coffee {
