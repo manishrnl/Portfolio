@@ -212,6 +212,7 @@ nav {
 
 /* About Section */
 .about {
+    min-height: 100vh;
     padding: 8rem 2rem;
     background: var(--background);
     position: relative;
@@ -230,6 +231,7 @@ nav {
 }
 
 .about h2 {
+    min-height: 15rem;
     text-align: center;
     margin-bottom: 4rem;
     font-size: 2.5rem;
@@ -260,7 +262,7 @@ nav {
 }
 
 .skills {
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .skills h3 {
@@ -367,10 +369,14 @@ nav {
 
 /* Projects Section */
 .projects {
+   
     padding: 8rem 2rem;
     background: linear-gradient(135deg, #f6f9fc, #f1f4f8);
 }
-
+.projects h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -480,7 +486,26 @@ nav {
     font-weight: 500;
     transition: color 0.3s ease;
 }
+.home-button {
+    background-color: rgb(5, 38, 73); /* Use primary color */
+    border: none; /* Remove borders */
+    padding: 15px 30px; /* Increase padding for a larger button */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Center vertically */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+    font-size: 18px; /* Increase font size */
+    color: white;
+}
+.home-button a{
+    color: white;
+}
 
+.home-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
 .project-links a:hover {
     color: var(--secondary-color);
 }
