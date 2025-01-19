@@ -422,8 +422,9 @@ nav {
 }
 
 .project-img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); 
+    border: 3px solid var(--primary-color);
 }
 
 .project-card {
