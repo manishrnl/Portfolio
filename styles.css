@@ -188,6 +188,7 @@ nav {
 }
 
 .cta-button {
+    margin-top: 5rem;
     display: inline-block;
     padding: 1.2rem 3rem;
     background: rgba(255, 255, 255, 0.1);
@@ -253,7 +254,7 @@ nav {
 .about-content {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem , 2rem , 1rem , 2rem;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -262,7 +263,7 @@ nav {
 }
 
 .skills {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
 }
 
 .skills h3 {
@@ -422,9 +423,8 @@ nav {
 }
 
 .project-img:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); 
-    border: 3px solid var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .project-card {
@@ -442,7 +442,8 @@ nav {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); 
+    border: 3px solid var(--primary-color);
 }
 
 .project-image {
