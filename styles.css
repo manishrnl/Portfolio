@@ -507,14 +507,14 @@ nav {
 .project-links {
     padding: 1.5rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     justify-content: flex-start;
     /* Ensure the buttons stay at the bottom */
 }
 
 .project-links a {
-    padding: 1.4rem;
+    padding: 0.8rem;
     border-radius: 1.4rem;
     text-decoration: none;
     color: white;
@@ -527,7 +527,7 @@ nav {
     background-color: rgb(5, 38, 73);
     /* Use primary color */
     border: none;
-    padding: 15px 20px;
+    padding: 5px ;
     text-align: center;
     text-decoration: none;
     display: inline-flex;
