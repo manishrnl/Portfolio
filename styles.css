@@ -316,7 +316,7 @@ nav {
 }
 
 .skill-item:hover .c-icon {
-    color: #555555; /* C dark gray */
+   color: #00599C; /* C dark gray */
 }
 
 .skill-item:hover .cpp-icon {
@@ -332,7 +332,7 @@ nav {
 }
 
 .skill-item:hover .fa-python {
-    color: #3776ab;
+     color: #00599C;
 }
 
 .skill-item:hover .fa-mobile {
@@ -501,7 +501,7 @@ nav {
 .home-button {
     background-color: rgb(5, 38, 73); /* Use primary color */
     border: none; /* Remove borders */
-    padding: 15px 30px; /* Increase padding for a larger button */
+    padding: 15px 20x; /* Increase padding for a larger button */
     text-align: center; /* Centered text */
     text-decoration: none; /* Remove underline */
     display: inline-flex; /* Align icon and text */
