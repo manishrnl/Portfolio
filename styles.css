@@ -5,16 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Updated Theme Variables */
 :root {
-    --primary-color: #2a2a72;
-    --secondary-color: #009ffd;
-    --accent-color: #00d4ff;
-    --text-color: #333;
-    --light-text: #fff;
-    --background: #f8f9fa;
-    --glass-background: rgba(255, 255, 255, 0.1);
-    --glass-border: rgba(255, 255, 255, 0.18);
-    --box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    --primary-color: #1e1e1e; /* Dark background */
+    --secondary-color: #323232; /* Slightly lighter dark */
+    --accent-color: #cd2edc;/* Vibrant yellow accent */
+    --text-color: #d4d4d4; /* Light gray text */
+    --light-text: #a31fb7; /* White text */
+    --glass-background: rgba(30, 30, 30, 0.8); /* Dark glass effect */
+    --glass-border: rgba(255, 255, 255, 0.1); /* Subtle border */
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
 html {
@@ -22,11 +22,12 @@ html {
     font-size: 16px;
 }
 
+/* Body Styling */
 body {
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background);
+    background-color: var(--primary-color);
     overflow-x: hidden;
 }
 
@@ -36,13 +37,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--background);
+    background: var(--primary-color); /* Fixed background variable */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg,
-            var(--primary-color),
-            var(--secondary-color));
+    background: var(--accent-color);
     border-radius: 5px;
 }
 
@@ -51,7 +50,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--secondary-color);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--glass-border);
@@ -113,7 +112,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     font-weight: 500;
     font-size: 1.2rem;
     position: relative;
@@ -146,9 +145,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg,
-            var(--primary-color),
-            var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     position: relative;
     overflow: hidden;
 }
@@ -175,7 +172,7 @@ nav {
 
 .hero-content {
     text-align: center;
-    color: var(--light-text);
+    color:White;
     z-index: 1;
     padding: 0 2rem;
 }
@@ -184,7 +181,7 @@ nav {
     font-size: 4rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     animation: fadeInDown 1s ease;
 }
 
@@ -196,14 +193,15 @@ nav {
     opacity: 0;
 }
 
+/* Buttons */
 .cta-button {
     margin-top: 5rem;
     display: inline-block;
     padding: 1.2rem 3rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: #CD2EDCFF;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    color: var(--light-text);
+    color: White;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 500;
@@ -214,8 +212,8 @@ nav {
 }
 
 .cta-button:hover {
-    background: var(--light-text);
-    color: var(--primary-color);
+    background:white;
+    color:Black;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
@@ -224,7 +222,7 @@ nav {
 .about {
     min-height: 100vh;
     padding: 8rem 2rem;
-    background: var(--background);
+    background: var(--primary-color); /* Fixed background variable */
     position: relative;
 }
 
@@ -247,7 +245,7 @@ nav {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color:white;
     position: relative;
 }
 
@@ -278,8 +276,11 @@ nav {
 .skills {
     margin-top: 1.5rem;
 }
-
+.about-text p{
+    color: var(--primary-color);
+}
 .skills h3 {
+
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -300,7 +301,7 @@ nav {
     padding: 0.5rem 1rem;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.9);
-    color: #666;
+    color: Black;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     cursor: default;
@@ -396,6 +397,7 @@ nav {
 .projects h2 {
     text-align: center;
     font-size: 2.5rem;
+    color: Black;
 }
 
 .project-grid {
@@ -405,6 +407,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+
 }
 
 .project-images {
@@ -444,9 +447,12 @@ nav {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
+.section-description {
+    color:Black;
+}
+/* Cards and Sections */
 .project-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--glass-background);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 1.5rem;
@@ -458,11 +464,16 @@ nav {
     height: 100%;
     /* Ensure the card takes the full height */
 }
-
+.project-grid .project-card h3{
+    color:White;
+}
+.project-grid .project-card p{
+    color:White;
+}
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-    border: 3px solid var(--primary-color);
+    border: 2px solid var(--accent-color);
 }
 
 .project-image {
@@ -557,14 +568,14 @@ nav {
 /* Contact Section */
 .contact {
     padding: 8rem 2rem;
-    background: var(--background);
+    background: var(--primary-color); /* Fixed background variable */
     position: relative;
 }
 
 .contact h2 {
     text-align: center;
     margin-bottom: 4rem;
-    color: var(--primary-color);
+    color:White;
     font-size: 2.5rem;
 }
 
@@ -588,19 +599,19 @@ nav {
 #contact-form input,
 #contact-form textarea {
     padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--glass-border);
     border-radius: 10px;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--secondary-color);
     color: var(--text-color);
     letter-spacing: 0.5px;
 }
 
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
-    color: rgba(0, 0, 0, 0.4);
+   color:White;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
@@ -608,9 +619,9 @@ nav {
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 3px rgba(0, 159, 253, 0.1);
-    background: rgba(255, 255, 255, 1);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
+    background:rgb(72, 25, 85);
 }
 
 #contact-form textarea {
@@ -623,10 +634,8 @@ nav {
 
 #contact-form button {
     padding: 1rem 2rem;
-    background: linear-gradient(45deg,
-            var(--primary-color),
-            var(--secondary-color));
-    color: var(--light-text);
+    background: var(--accent-color);
+    color:White;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -637,6 +646,8 @@ nav {
 }
 
 #contact-form button:hover {
+    background: var(--light-text);
+    color:Green;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
@@ -664,6 +675,7 @@ nav {
 }
 
 .social-links a:hover {
+
     transform: translateY(-3px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--primary-color);
@@ -901,10 +913,8 @@ nav {
 footer {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(45deg,
-            var(--primary-color),
-            var(--secondary-color));
-    color: var(--light-text);
+    background: var(--secondary-color);
+    color: var(--text-color);
 }
 
 /* Animations */
@@ -992,3 +1002,4 @@ footer {
         font-size: 1rem;
     }
 }
+
