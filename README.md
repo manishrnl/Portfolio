@@ -14,15 +14,15 @@
 
 | Home Page | About Page |
 |-----------|-----------|
-| ![Main](Images/Portfoilo-Home.png) | ![Help](Images/Portfolio-About.png) |
+| ![Main](Images/Portfolio-Home.png) | ![Help](Images/Portfolio-About.png) |
 
 | Experences Page | Projects Page |
 |-----------|-----------|
-| ![Main](Images/Portfoilo-Experieces.png) | ![Help](Images/Portfolio-Projects.png) |
+| ![Main](Images/Portfoli-Experiences.png) | ![Help](Images/Portfolio-Projects.png) |
 
 | Testimonials Page | Contacts Page |
 |-----------|-----------|
-| ![Main](Images/Portfoilo-Testimonials.png) | ![Help](Images/Portfolio-Contact.png) |
+| ![Main](Images/Portfolio-Testimonials.png) | ![Help](Images/Portfolio-Contact.png) |
 
 ---
 
