@@ -5,17 +5,11 @@
     </a>
   <br />
 
-  <div>
-    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
-    <img src="https://img.shields.io/badge/-Three_JS-black?style=for-the-badge&logoColor=white&logo=threedotjs&color=000000" alt="three.js" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-  </div>
 
-  <h3 align="center">A 3D Developer Portfolio</h3>
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
+<h3 align="center">This is a README Portfolio</h3>
+
+  
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -28,21 +22,13 @@
 6. 🔗 [Links](#links)
 7. 🚀 [More](#more)
 
-## 🚨 Tutorial
-
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/0fYi8SGA20k?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
 
 ## <a name="introduction">🤖 Introduction</a>
 
 By developing this project, you will gain hands-on experience in crafting immersive web experiences, mastering 3D libraries, and implementing engaging animations. The combination of creativity and technical skills showcased in this project serves as an excellent learning opportunity for developers seeking to enhance their portfolio and captivate users with cutting-edge web design.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
+If you're getting started and need assistance or face any bugs, then reach us at newemail12k4@gmail.com
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -72,7 +58,7 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 👉 **Responsive Design**: Ensures optimal display and functionality across all devices.
 
-and many more, including code architecture and reusability 
+and many more, including code architecture and reusability
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
@@ -89,16 +75,18 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone git@github.com:adrianhajdin/project_3D_developer_portfolio.git
-cd project_3D_developer_portfolio
+  git clone https://github.com/manishrnl/Portfolio.git
+
 ```
 
 **Installation**
+First delete `package-lock.json` file if they exist in the project directory. Then, navigate to the project directory:
+
 
 Install the project dependencies using npm:
 
 ```bash
-npm install
+   npm install
 ```
 
 **Set Up Environment Variables**
@@ -116,7 +104,7 @@ Replace the placeholder values with your actual EmailJS credentials. You can obt
 **Running the Project**
 
 ```bash
-npm run dev
+  npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
@@ -128,267 +116,320 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to view the 
 
 ```javascript
 import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+    mobile,
+    backend,
+    creator,
+    web,
+    javascript,
+    typescript,
+    html,
+    css,
+    reactjs,
+    redux,
+    tailwind,
+    nodejs,
+    mongodb,
+    git,
+    figma,
+    docker,
+    meta,
+    starbucks,
+    tesla,
+    shopify,
+    carrent,
+    jobit,
+    tripguide,
+    threejs,
+    github,
 } from "../assets";
 
+
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+    {
+        id: "about",
+        title: "About",
+    },
+    {
+        id: "work",
+        title: "Work",
+    },
+    {
+        id: "contact",
+        title: "Contact",
+    },
 ];
 
 const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+    {
+        title: "Web Developer",
+        icon: creator,
+    },
+    {
+        title: "Java Software Developer",
+        icon: mobile,
+    },
+    {
+        title: "Full Stack Java Developer",
+        icon: mobile,
+    },
+    {
+        title: "JavaFX and Spring Boot Developer",
+        icon: creator,
+    },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+    {
+        name: "HTML 5",
+        icon: html,
+    },
+    {
+        name: "CSS 3",
+        icon: css,
+    },
+    {
+        name: "JavaScript",
+        icon: javascript,
+    },
+
+
+    {
+        name: "Node JS",
+        icon: nodejs,
+    },
+    {
+        name: "MySQL",
+        icon: mongodb,
+    },
+    {
+        name: "Java",
+        icon: mobile,
+    },
+    {
+        name: "git",
+        icon: git,
+    },
+
+    {
+        name: "docker",
+        icon: docker,
+    },
+    {
+        name: "Spring Boot",
+        icon: creator,
+    },
 ];
 
 const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+
+    {
+        title: "Web Developer",
+        company_name: "Code on GitHub",
+        icon: creator,
+        iconBg: "#383E56",
+        date: "Jan 2021 - Feb 2022",
+        points: [
+            "Built responsive and interactive websites using HTML, CSS, JavaScript, and React.js.",
+            "Collaborated with designers to implement user-friendly UI/UX layouts.",
+            "Optimized front-end performance through efficient code and lazy loading techniques.",
+            "Integrated REST APIs and ensured proper error handling and validation on the client side."
+        ],
+    },
+    {
+        title: "Java FX Developer",
+        company_name: "Code on GitHub",
+        icon: mobile,
+        iconBg: "#383E56",
+        date: "March 2024 - April 2025",
+        points: [
+            "Developed interactive desktop applications using JavaFX and Scene Builder.",
+            "Implemented dynamic UI components with FXML and CSS styling for cross-platform consistency.",
+            "Integrated backend MySQL databases using JDBC for data persistence and retrieval.",
+            "Debugged and optimized application performance, ensuring responsive and user-friendly interfaces."
+        ],
+    },
+    {
+        title: "Spring Boot Developer",
+        company_name: "Code on GitHub",
+        icon: creator,
+        iconBg: "#383E56",
+        date: "May 2025 - Present",
+        points: [
+            "Developed RESTful APIs and microservices using Spring Boot and Spring MVC.",
+            "Implemented security features using Spring Security and JWT authentication.",
+            "Worked with JPA/Hibernate for ORM and integrated PostgreSQL for database operations.",
+            "Wrote unit and integration tests using JUnit and Mockito to ensure robust application logic."
+        ],
+    },
+    {
+        title: "Java Full Stack Developer",
+        company_name: "Code on GitHub",
+        icon: mobile,
+        iconBg: "#383E56",
+        date: "May 2025 - Present",
+        points: [
+            "Developing full-stack applications using Java (Spring Boot) for backend and React.js for frontend.",
+            "Designing scalable APIs and integrating them with dynamic frontend components.",
+            "Managing application state using Redux and handling complex form validations.",
+            "Implementing CI/CD pipelines and managing deployments via GitHub Actions and Docker."
+        ],
+    }
+
 ];
 
 const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+    {
+        testimonial:
+            "Working with Manish on the Student Attendance Management System made things so much easier. He handled the backend logic efficiently and was always ready to help debug issues.",
+        name: "Amit Sharma",
+        designation: "Backend Intern",
+        company: "Code on GitHub",
+        image: "https://randomuser.me/api/portraits/men/32.jpg",
+    },
+    {
+        testimonial:
+            "Manish’s attention to detail during the development of our Library Management System was impressive. His JavaFX work ensured smooth navigation and a professional look.",
+        name: "Priya Verma",
+        designation: "UI Designer",
+        company: "Code on GitHub",
+        image: "https://randomuser.me/api/portraits/women/44.jpg",
+    },
+    {
+        testimonial:
+            "During the development of our full-stack application, Manish was always quick to solve problems. His integration between Spring Boot and React made data handling seamless.",
+        name: "Rahul Sen",
+        designation: "Full Stack Trainee",
+        company: "Code on GitHub",
+        image: "https://randomuser.me/api/portraits/men/36.jpg",
+    },
 ];
 
+
 const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+    {
+        name: "📘 School Attendance Management System",
+        description:
+            "A robust and feature-rich school attendance system built with JavaFX and MySQL. It supports attendance tracking for students and teachers, generates class-wise/monthly reports, and includes secure login, user roles, and real-time database integration.There is a features of changing Themes , font Name , Font Size as well.",
+        tags: [
+            {
+                name: "JavaFX",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "MySQL",
+                color: "green-text-gradient",
+            },
+            {
+                name: "gitHub",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/manishrnl/School-Attendance-Management-System.git",
+    },
+    {
+        name: "🌐 Portfolio Website",
+        description:
+            "A clean, responsive personal portfolio website built using HTML, CSS, and JavaScript to showcase my projects, resume, and skills. Fully optimized for all devices with a user-friendly interface.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "JavaScript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: jobit,
+        source_code_link: "https://github.com/manishrnl/Portfolio",
+    },
+    {
+        name: "🧮 Advanced Multi-Mode Calculator",
+        description:
+            "A multifunctional scientific calculator developed using JavaFX. It includes currency and unit conversion, scientific calculations, and a standard mode. Great for students and professionals alike.",     tags: [
+            {
+                name: "JavaFX",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "MySQL",
+                color: "green-text-gradient",
+            },
+            {
+                name: "gitHub",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: shopify,
+        source_code_link: "https://github.com/manishrnl/Advanced-Calculator.git",
+    },
+    {
+        name: "🏦 Bank Management System",
+        description:
+            " Simulates ATM functionality with secure login, deposit, withdrawal, and balance checking. Built in Java to emulate real-world banking operations with database support.",     tags: [
+            {
+                name: "JavaFX",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "MySQL",
+                color: "green-text-gradient",
+            },
+            {
+                name: "gitHub",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: typescript,
+        source_code_link: "https://github.com/manishrnl/Bank_Management_System.git",
+    },
+    {
+        name: "🎮 Tic Tac Toe (PvP + AI)",
+        description:
+            "A fun and interactive JavaFX game where players can play against each other or an AI. Includes win tracking and user-friendly interface to enhance gameplay experience.",
+        tags: [
+            {
+                name: "JavaFX",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "MySQL",
+                color: "green-text-gradient",
+            },
+            {
+                name: "gitHub",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tailwind,
+        source_code_link: "https://github.com/manishrnl/tic-tac-toe-Game.git",
+    },
+    {
+        name: "✊ Rock Paper Scissors Game",
+        description:
+            "  A classic game built using JavaFX where users play against the system. The game logic evaluates the outcome based on selections and displays dynamic results in real-time.",
+        tags: [
+            {
+                name: "JavaFX",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "MySQL",
+                color: "green-text-gradient",
+            },
+            {
+                name: "gitHub",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: figma,
+        source_code_link: "https://github.com/manishrnl/Rock-Paper-Scissor.git",
+    },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
@@ -761,16 +802,4 @@ module.exports = {
 
 </details>
 
-## <a name="links">🔗 Links</a>
-
-Models and Assets used in the project can be found [here](https://drive.google.com/drive/folders/1KVU8iaH0E_JFtShNiR3BgCSA3pawXY4Z)
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning experience. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://www.jsmastery.pro/ultimate-next-course" target="_blank">
-<img src="https://i.ibb.co/804sPK6/Image-720.png" alt="Project Banner">
-</a>
+##<h2 style="font-color:GREEN;"> Thanks . You have reached to the end of this Project</h2>
