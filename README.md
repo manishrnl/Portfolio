@@ -12,9 +12,17 @@
 
 ## 🖼️ Preview
 
-| Main Page | Help Page |
+| Home Page | About Page |
 |-----------|-----------|
-| ![Main](images/Main_Screen.png) | ![Help](images/Help.png) |
+| ![Main](Images/Portfoilo-Home.png) | ![Help](Images/Portfolio-About.png) |
+
+| Experences Page | Projects Page |
+|-----------|-----------|
+| ![Main](Images/Portfoilo-Experieces.png) | ![Help](Images/Portfolio-Projects.png) |
+
+| Testimonials Page | Contacts Page |
+|-----------|-----------|
+| ![Main](Images/Portfoilo-Testimonials.png) | ![Help](Images/Portfolio-Contact.png) |
 
 ---
 
