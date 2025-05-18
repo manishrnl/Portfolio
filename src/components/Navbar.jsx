@@ -50,9 +50,10 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            MANISH <span className="sm:block hidden">  |  Java Developer </span>
-          </p>
+       <p className="text-white text-[18px] font-bold cursor-pointer flex">
+  MANISH <span className="ml-2">| Java Developer</span>
+</p>
+
         </Link>
 
         {/* Desktop Menu */}
