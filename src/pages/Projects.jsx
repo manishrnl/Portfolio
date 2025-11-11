@@ -57,7 +57,8 @@ export default function Projects() {
                 "PostgreSQL",
                 "Tailwind CSS",
                 "JWT Authentication",
-                "Cloudinary",
+                "Render",
+                "Docker",
             ],
         },
 
