@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+@reference "tailwindcss";
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 40px;
+    @apply bg-gray-100 text-gray-900;
+    background: linear-gradient(135deg, #212529, #1c242b);
+
+}
+
+.hero-section {
+    scroll-margin-top: 70px; /* avoids navbar overlap when using anchors */
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-images::-webkit-scrollbar {
+    height: 8px;
+}
+
+.project-images::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.4);
+    border-radius: 10px;
+}
+
+.project-images::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(100, 100, 100, 0.6);
+}
+
+.project-images {
+    scroll-behavior: smooth;
+}

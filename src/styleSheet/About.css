@@ -1,0 +1,28 @@
+.skill-badge {
+    border: 1px solid rgba(120, 58, 177, 0.2);
+    color: white;
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.skill-badge:hover {
+    color: black;
+    background: #d4a7a7;
+}
+
+
+.hobby-card {
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.hobby-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+}

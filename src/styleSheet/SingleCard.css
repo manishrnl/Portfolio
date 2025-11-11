@@ -1,0 +1,13 @@
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        padding: 1rem;
+    }
+    .project-card img {
+        max-width: 140px !important;
+        height: 120px !important;
+    }
+}

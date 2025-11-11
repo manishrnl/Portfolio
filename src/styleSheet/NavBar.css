@@ -1,0 +1,42 @@
+.nav-root {
+    width: 100%;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+
+.nav-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.nav-hidden {
+    transform: translateY(-110%);
+    opacity: 0;
+}
+
+/* mobile open state styling */
+@media (max-width: 767px) {
+    .nav-links {
+        background: #212529;
+        position: absolute;
+        top: 64px;
+        right: 12px;
+        left: 12px;
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+    }
+
+    .nav-links ul {
+        gap: 12px;
+    }
+}
