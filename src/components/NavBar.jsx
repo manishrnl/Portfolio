@@ -30,7 +30,8 @@ export default function NavBar() {
 
     return (
         <nav
-            className={`fixed-top nav-root ${visible ? "nav-visible" : "nav-hidden"}`}
+          className={`nav-root ${visible ? "nav-visible" : "nav-hidden"}`}
+
             style={{
                 zIndex: 1100,
                 transition: "transform 0.36s ease, opacity 0.36s ease",
@@ -38,7 +39,7 @@ export default function NavBar() {
             }}
         >
             <div className="container d-flex align-items-center justify-content-end py-2">
-
+ 
 
                 {/* mobile toggle */}
                 <button

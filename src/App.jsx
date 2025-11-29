@@ -12,6 +12,7 @@ function App() {
     return (
         <Router>
             <NavBar/>
+            <main className="app-shell">
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about-us" element={<About/>}/>
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/contact-us" element={<Contact/>}/>
                 <Route path="/thank-you" element={<ThankYou/>}/>
             </Routes>
+            </main>
             <Footer/>
         </Router>
     );

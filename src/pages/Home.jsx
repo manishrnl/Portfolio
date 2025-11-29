@@ -1,29 +1,24 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import Motto from "../components/Motto.jsx";
 
 const Home = () => {
-    const imageStyle = {
-        borderRadius: "20px"
-    }
     return (
-        <div className="home-container bg-dark text-light py-5 mt-lg-5">
-
+        <section className="hero-section home-container py-5">
             {/* Hero Section */}
-            <div
-                className="container text-center text-md-start d-flex flex-column flex-md-row align-items-center justify-content-between">
-                <div className="profile-img mb-4 mb-md-0">
+            <div className="container text-center text-md-start d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+                <div className="profile-img mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
                     <motion.img
                         src="/images/Manish.png"
                         alt="Manish"
-                        className="rounded-circle shadow-lg mb-4 hero-img border border-3 border-light"
+                        className="hero-img"
                         style={{
                             width: "180px",
                             height: "180px",
                             objectFit: "cover",
                         }}
-                        initial={{opacity: 0, scale: 0.8, y: -20}}
+                        initial={{ opacity: 0, scale: 0.8, y: -20 }}
                         animate={{
                             opacity: 1,
                             y: [0, -10, 0],
@@ -37,48 +32,66 @@ const Home = () => {
                     />
                 </div>
 
-                <div className="hero-text ms-md-5  text-md-start">
-                    <h5 className="text-secondary">Hey, I'm Manish </h5>
-                    <h1 className="fw-bold  ">
-                        <span className="text-success">{'{Full Stack}'} </span> Web , Desktop &
-                        App Developer <span>{'</>'}</span>
-
-
-                    </h1>
-                    <h5 className="mt-3 text-light-50 text-center ">
-                        With expertise in cutting-edge technologies such as Spring Boot , React
-                        , JavaFX . . . </h5>
-                    <h5 className="text-center"> I deliver web solutions that are both
-                        innovative and robust.
+                <div className="hero-text ms-md-5 text-md-start">
+                    <h5 className="hero-subtitle mb-2">
+                        Hey, I'm Manish
                     </h5>
 
+                    <h1 className="hero-title fw-bold mb-3">
+                        <span className="hero-title-accent">
+                            {"{Full Stack} "}
+                        </span>
+                        Web, Desktop & App Developer <span>{"</>"}</span>
+                    </h1>
+
+                    <p className="hero-tagline mb-2">
+                        With expertise in cutting-edge technologies such as{" "}
+                        <span className="hero-tagline-strong">Spring Boot</span>,{" "}
+                        <span className="hero-tagline-strong">React</span>,{" "}
+                        <span className="hero-tagline-strong">JavaFX</span>...
+                    </p>
+
+                    <p className="hero-tagline">
+                        I deliver solutions that are scalable, performant, and
+                        crafted with clean, maintainable code.
+                    </p>
                 </div>
             </div>
 
             {/* Stats Section */}
-            <div className="container text-center my-5 mt-5">
+            <div className="container stats-section text-center mt-5">
                 <div className="row g-4">
                     <div className="col-6 col-md-3">
-                        <h3 className="text-success fw-bold">1+</h3>
-                        <p>Years Experience</p>
+                        <div className="stat-card">
+                            <h3>1+</h3>
+                            <p>Years Experience</p>
+                        </div>
                     </div>
                     <div className="col-6 col-md-3">
-                        <h3 className="text-success fw-bold">10+</h3>
-                        <p>Projects Completed</p>
+                        <div className="stat-card">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
                     </div>
                     <div className="col-6 col-md-3">
-                        <h3 className="text-success fw-bold">Still Learning</h3>
-                        <p>Satisfied Clients</p>
+                        <div className="stat-card">
+                            <h3>Still</h3>
+                            <p>Learning & Improving</p>
+                        </div>
                     </div>
                     <div className="col-6 col-md-3">
-                        <h3 className="text-success fw-bold">0</h3>
-                        <p>Awards Won</p>
+                        <div className="stat-card">
+                            <h3>0</h3>
+                            <p>Awards (for now 😉)</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <Motto/>
-        </div>
+            <div className="container">
+                <Motto />
+            </div>
+        </section>
     );
 };
 
