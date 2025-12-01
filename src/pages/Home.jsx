@@ -1,9 +1,15 @@
-import React from "react";
+import {React ,useEffect}from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 import Motto from "../components/Motto.jsx";
 
 const Home = () => {
+
+        useEffect(() => {
+            document.title = "Home - Manish Kumar";
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }, []);
+
     return (
         <section className="hero-section home-container py-5">
             {/* Hero Section */}

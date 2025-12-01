@@ -181,11 +181,11 @@ export default function Projects() {
             ),
             images: [
                 "/images/Portfolio/Main_screen.png",
-                "/images/Portfolio/Portfolio2.png",
-                "/images/Portfolio/Portfolio3.png",
-                "/images/Portfolio/Portfolio4.png",
                 "/images/Portfolio/Portfolio5.png",
                 "/images/Portfolio/Portfolio1.png",
+                "/images/Portfolio/Portfolio4.png",
+                "/images/Portfolio/Portfolio3.png",
+                "/images/Portfolio/Portfolio2.png",
             ],
             viewLink: "https://github.com/manishrnl/Portfolio",
             downloadLink:
