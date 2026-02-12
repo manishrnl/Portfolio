@@ -69,7 +69,46 @@ export default function Projects() {
                 "Docker",
             ],
         },
-
+        {
+            title: "🔗 LinkedIn Enterprise Microservices",
+            description: (
+                <>
+                    An enterprise-grade <strong>Microservices Architecture</strong> project
+                    replicating LinkedIn's core functionality. It utilizes a distributed
+                    system design with <span className="text-success">Spring Boot, Kafka, and Kubernetes</span>.
+                    The system is partitioned into independent services (User, Connection, Post, Notification)
+                    communicating via <strong>Kafka event-driven messaging</strong> for high scalability.
+                    It features <span className="text-success">Redis Caching</span> for lightning-fast
+                    profile retrieval and <strong>Distributed Tracing with Zipkin</strong> for monitoring
+                    request flows across services. The project integrates <strong>AI-driven insights</strong>
+                    and is fully containerized using <strong>Docker</strong>, orchestrated via
+                    <strong> Kubernetes</strong> for automated scaling and resilience. Demonstrates
+                    advanced expertise in <span className="text-success">Event-Driven Architecture</span>,
+                    API Gateway pattern, and cloud-native deployment.
+                </>
+            ),
+            images: [
+                "/images/LinkedIn/post-created.png",
+                "/images/LinkedIn/post-like.png",
+                "/images/LinkedIn/post-unlike.png",
+                "/images/LinkedIn/send-connection-request.png",
+                "/images/LinkedIn/get-4-degree-connection.png", // Recommended: add a diagram of your microservices!
+            ],
+            viewLink: "https://github.com/manishrnl/Spring-Linked-In.git",
+            downloadLink: "https://github.com/manishrnl/Spring-Linked-In/archive/refs/heads/main.zip",
+            technologies: [
+                "Spring Boot",
+                "Microservices",
+                "Apache Kafka",
+                "Kubernetes",
+                "Docker",
+                "Redis Caching",
+                "Zipkin",
+                "PostgreSQL",
+                "Neo4J",
+                "OpenAI API",
+            ],
+        },
         {
             title: "🏦 Complete University Management System",
             description: (
