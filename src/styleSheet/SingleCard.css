@@ -1,0 +1,24 @@
+/* Hover Glow (consistent with hobby-card + project themes) */
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 24px 65px rgba(0, 0, 0, 0.95),
+        0 0 40px rgba(120, 58, 177, 0.75); /* violet glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Mobile Responsive Tweaks */
+@media (max-width: 768px) {
+    .project-card {
+        padding: 1rem;
+    }
+
+    /* Make the images match the smaller layout but preserve glow style */
+    .project-card img {
+        max-width: 140px !important;
+        height: 120px !important;
+        border-radius: 12px;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.65);
+    }
+}

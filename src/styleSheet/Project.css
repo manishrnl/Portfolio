@@ -1,0 +1,342 @@
+/* ----------------------------------
+   IntelliJ-style theme variables
+---------------------------------- */
+:root {
+    --ide-bg-top: #3b1f63;
+    --ide-bg-bottom: #050816;
+    --ide-accent: #fbbf24;              /* warm yellow accent */
+    --ide-accent-soft: rgba(251, 191, 36, 0.6);
+    --ide-border-soft: rgba(255, 255, 255, 0.12);
+    --ide-text-main: #ffffff;
+    --ide-text-muted: rgba(255, 255, 255, 0.75);
+    --ide-glow-purple: 0 18px 40px rgba(88, 28, 135, 0.6);
+}
+
+/* ----------------------------------
+   NAVBAR (IntelliJ glowing card feel)
+---------------------------------- */
+
+.nav-root {
+    width: 100%;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(236, 72, 153, 0.35) 0, transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(56, 189, 248, 0.2) 0, transparent 55%),
+        linear-gradient(135deg, var(--ide-bg-top), var(--ide-bg-bottom));
+    box-shadow: var(--ide-glow-purple);
+    border-bottom: 1px solid var(--ide-border-soft);
+    backdrop-filter: blur(16px);
+    transition: transform 0.35s ease, opacity 0.35s ease, box-shadow 0.35s ease;
+}
+
+.nav-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.nav-hidden {
+    transform: translateY(-110%);
+    opacity: 0;
+}
+
+/* mobile open state styling */
+@media (max-width: 767px) {
+    .nav-links {
+        background:
+            radial-gradient(circle at 0% 0%, rgba(236, 72, 153, 0.45) 0, transparent 50%),
+            linear-gradient(135deg, #402078, #140b33);
+        position: absolute;
+        top: 64px;
+        right: 12px;
+        left: 12px;
+        border-radius: 18px;
+        padding: 12px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);
+        border: 1px solid var(--ide-border-soft);
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+    }
+
+    .nav-links ul {
+        gap: 12px;
+    }
+}
+
+/* ----------------------------------
+   SKILL BADGE – glowing IntelliJ pill
+---------------------------------- */
+
+.skill-badge {
+    border: 1px solid var(--ide-border-soft);
+    color: var(--ide-text-main);
+    padding: 12px 26px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1rem;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(236, 72, 153, 0.5) 0, transparent 50%),
+        linear-gradient(135deg, #4c1d95, #1e1336);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.06),
+        0 14px 30px rgba(15, 23, 42, 0.9);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    backdrop-filter: blur(6px);
+}
+
+.skill-badge:hover {
+    transform: translateY(-1px) scale(1.03);
+    border-color: var(--ide-accent-soft);
+    box-shadow:
+        0 0 0 1px rgba(251, 191, 36, 0.6),
+        0 18px 40px rgba(88, 28, 135, 0.9);
+}
+
+/* ----------------------------------
+   HOBBY CARD – IntelliJ-style panel
+---------------------------------- */
+
+.hobby-card {
+    border: 1px solid var(--ide-border-soft);
+    border-radius: 20px;
+    height: 100%;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(236, 72, 153, 0.4) 0, transparent 55%),
+        linear-gradient(135deg, var(--ide-bg-top), var(--ide-bg-bottom));
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.hobby-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow:
+        0 22px 60px rgba(0, 0, 0, 0.85),
+        0 0 40px rgba(120, 58, 177, 0.7);
+    border-color: var(--ide-accent-soft);
+}
+
+/* ----------------------------------
+   PROJECTS – cards + tech pills + buttons
+---------------------------------- */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 992px) {
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr); /* 2 per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* 1 per row on small screens */
+    }
+}
+
+.project-card {
+    padding: 1.3rem;
+    border-radius: 24px;
+    border: 1px solid var(--ide-border-soft);
+    background:
+        radial-gradient(circle at 0% 0%, rgba(236, 72, 153, 0.4) 0, transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(56, 189, 248, 0.25) 0, transparent 55%),
+        linear-gradient(135deg, var(--ide-bg-top), var(--ide-bg-bottom));
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    height: 100%;
+    color: var(--ide-text-main);
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--ide-accent-soft);
+    box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.95),
+        0 0 40px rgba(120, 58, 177, 0.8);
+}
+
+/* image strip stays mostly the same */
+.image-strip {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.image-strip img {
+    width: 100%;
+    max-width: 160px;
+    height: 200px;
+    border-radius: 14px;
+    object-fit: cover;
+    cursor: pointer;
+    flex: 0 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* tech tags like mini glowing pills */
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+
+.tech-list span {
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    background: radial-gradient(circle at 0% 0%, rgba(236, 72, 153, 0.4) 0, transparent 60%);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: var(--ide-text-muted);
+}
+
+/* buttons with IntelliJ accent */
+.btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.btns a {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #facc15, #fb923c);
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 12px 30px rgba(250, 204, 21, 0.35);
+}
+
+.btns a:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.85),
+        0 0 26px rgba(250, 204, 21, 0.9);
+}
+
+/* ghost / outline style for first button */
+.btns a:first-child {
+    background: transparent;
+    color: var(--ide-text-main);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    box-shadow: none;
+}
+
+.btns a:first-child:hover {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Image Viewer (kept mostly same, just consistent blur & softness) */
+.viewer {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 10% 0%, rgba(236, 72, 153, 0.35) 0, transparent 55%),
+                rgba(0, 0, 0, 0.88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    backdrop-filter: blur(12px);
+    padding: 1rem;
+}
+
+.viewer img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 16px;
+    object-fit: contain;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.85);
+}
+
+.nav,
+.close {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav.left {
+    left: 10px;
+}
+
+.nav.right {
+    right: 10px;
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    top: 15px;
+    right: 15px;
+}
+
+.counter {
+    position: absolute;
+    bottom: 15px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+    .project-card {
+        padding: 1rem;
+    }
+
+    .image-strip img {
+        max-width: 120px;
+        height: 200px;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .viewer img {
+        max-width: 95vw;
+        max-height: 70vh;
+    }
+
+    .nav {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+    }
+
+    .close {
+        width: 35px;
+        height: 35px;
+    }
+}

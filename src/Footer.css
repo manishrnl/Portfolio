@@ -1,0 +1,99 @@
+/* ===== FOOTER WRAPPER – dark glowing basin ===== */
+
+.footer {
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 0;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(120, 58, 177, 0.45), transparent 60%),
+        radial-gradient(circle at 100% 100%, rgba(56, 189, 248, 0.35), transparent 60%),
+        linear-gradient(135deg, #0b0f17, #050816);
+    border-top: 1px solid rgba(148, 163, 255, 0.25);
+    box-shadow:
+        0 -2px 30px rgba(0, 0, 0, 0.7),
+        0 0 35px rgba(120, 58, 177, 0.45);
+}
+
+.footer .container {
+    position: relative;
+    z-index: 1;
+    color: #e5e7ff;
+}
+
+/* Subtle floating aura elements */
+.footer::before,
+.footer::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(32px);
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.footer::before {
+    width: 250px;
+    height: 250px;
+    top: -60px;
+    left: -60px;
+    background: radial-gradient(circle,
+                rgba(120, 58, 177, 0.6),
+                transparent 65%);
+    animation: footerFloat 9s ease-in-out infinite;
+}
+
+.footer::after {
+    width: 300px;
+    height: 300px;
+    bottom: -80px;
+    right: -80px;
+    background: radial-gradient(circle,
+                rgba(56, 189, 248, 0.55),
+                transparent 65%);
+    animation: footerFloat 12s ease-in-out infinite reverse;
+}
+
+@keyframes footerFloat {
+    0%, 100% { transform: translateY(0); }
+    50%     { transform: translateY(-18px); }
+}
+
+/* ===== SOCIAL BUTTONS – glowing pills ===== */
+
+.social-btn {
+    border-radius: 30px;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    background: radial-gradient(circle at top left,
+                rgba(120, 58, 177, 0.35),
+                rgba(15, 23, 42, 0.95));
+    color: #e5e7ff;
+    border: 1px solid rgba(148, 163, 255, 0.55);
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+    box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 1),
+        0 0 14px rgba(129, 140, 248, 0.45);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    background: linear-gradient(135deg, #ffb86c, #f97316, #facc15);
+    color: #111827 !important;
+    border-color: rgba(252, 211, 77, 0.95);
+    box-shadow:
+        0 0 22px rgba(252, 211, 77, 0.8),
+        0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+/* ===== FOOTER DIVIDER LINE ===== */
+
+hr {
+    opacity: 0.25;
+    border-color: rgba(148, 163, 255, 0.35);
+    box-shadow: 0 0 14px rgba(129, 140, 248, 0.35);
+}

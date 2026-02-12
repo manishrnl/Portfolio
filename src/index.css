@@ -1,0 +1,489 @@
+/* ===== Global IntelliJ-like glowing theme ===== */
+html,
+body {
+    
+       font-family: 'Poppins', sans-serif;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(120, 58, 177, 0.25), transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(56, 189, 248, 0.25), transparent 55%),
+        #020617;
+    color: #e5e7eb; margin: 0;
+    padding: 0;
+}
+
+#root {
+     width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* ===== NAVBAR – IntelliJ card-style top bar ===== */
+
+.nav-root {
+    position: fixed;     /* <– instead of sticky */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100;       /* a bit higher than default */
+    width: 100%;
+
+    background: radial-gradient(circle at top left,
+                rgba(120, 58, 177, 0.65) 0,
+                rgba(15, 23, 42, 0.98) 45%,
+                rgba(15, 23, 42, 1) 100%);
+    border-bottom: 1px solid rgba(129, 140, 248, 0.6);
+    box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.9),
+        0 14px 40px rgba(0, 0, 0, 0.8),
+        0 0 26px rgba(129, 140, 248, 0.5);
+    backdrop-filter: blur(18px);
+
+    transform: translateY(0);
+    opacity: 1;
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
+}
+
+.nav-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.nav-hidden {
+    transform: translateY(-110%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Links inside nav */
+.nav-links a {
+    color: #e5e7ff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    background: transparent;
+    border: 1px solid transparent;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #fefce8;
+    background: radial-gradient(circle at center,
+                rgba(129, 140, 248, 0.25),
+                rgba(15, 23, 42, 0.95));
+    border-color: rgba(129, 140, 248, 0.7);
+    box-shadow:
+        0 0 18px rgba(129, 140, 248, 0.6),
+        0 6px 20px rgba(0, 0, 0, 0.6);
+    transform: translateY(-1px);
+}
+
+/* mobile open state styling */
+@media (max-width: 767px) {
+    .nav-links {
+        background: radial-gradient(circle at top,
+                    rgba(15, 23, 42, 0.95),
+                    rgba(15, 23, 42, 1));
+        position: absolute;
+        top: 64px;
+        right: 12px;
+        left: 12px;
+        border-radius: 18px;
+        padding: 12px;
+        border: 1px solid rgba(129, 140, 248, 0.5);
+        box-shadow:
+            0 18px 40px rgba(0, 0, 0, 0.9),
+            0 0 26px rgba(56, 189, 248, 0.35);
+        backdrop-filter: blur(18px);
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+    }
+
+    .nav-links ul {
+        gap: 12px;
+    }
+}
+
+/* ===== HERO SECTION – matching dark glowing panel ===== */
+
+.hero-section {
+    min-height: 100vh;
+    scroll-margin-top: 70px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    color: #f9fafb;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(120, 58, 177, 0.6), transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(56, 189, 248, 0.45), transparent 60%),
+        linear-gradient(135deg, #020617 0%, #020617 45%, #020617 100%);
+}
+
+.hero-section::before,
+.hero-section::after {
+    content: "";
+    position: absolute;
+    border-radius: 999px;
+    filter: blur(26px);
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.hero-section::before {
+    top: -40px;
+    left: -80px;
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(circle,
+                rgba(120, 58, 177, 0.8),
+                transparent 70%);
+    animation: float 7s ease-in-out infinite;
+}
+
+.hero-section::after {
+    bottom: -80px;
+    right: -60px;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle,
+                rgba(56, 189, 248, 0.7),
+                transparent 70%);
+    animation: float 9s ease-in-out infinite reverse;
+}
+
+.hero-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 3px solid rgba(129, 140, 248, 0.9);
+    box-shadow:
+        0 0 0 3px rgba(15, 23, 42, 1),
+        0 0 22px rgba(129, 140, 248, 0.9),
+        0 18px 45px rgba(0, 0, 0, 0.85);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.04) translateY(-2px);
+    box-shadow:
+        0 0 0 3px rgba(15, 23, 42, 1),
+        0 0 32px rgba(129, 140, 248, 1),
+        0 22px 52px rgba(0, 0, 0, 0.9);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-18px); }
+}
+
+/* ===== SKILL BADGE – glowing IntelliJ pill ===== */
+
+.skill-badge {
+    border: 1px solid rgba(129, 140, 248, 0.6);
+    color: #e5e7ff;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    background: radial-gradient(circle at top left,
+                rgba(88, 28, 135, 0.9),
+                rgba(15, 23, 42, 0.95));
+    box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 1),
+        0 0 18px rgba(129, 140, 248, 0.6);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+    cursor: default;
+}
+
+.skill-badge:hover {
+    color: #fdfdfd;
+    background: radial-gradient(circle at bottom right,
+                rgba(56, 189, 248, 0.95),
+                rgba(37, 99, 235, 1));
+    border-color: rgba(56, 189, 248, 0.95);
+    box-shadow:
+        0 0 22px rgba(56, 189, 248, 0.95),
+        0 12px 26px rgba(0, 0, 0, 0.8);
+    transform: translateY(-1px);
+}
+
+/* ===== HOBBY CARD – glowing IntelliJ card ===== */
+
+.hobby-card {
+    background: radial-gradient(circle at top left,
+                rgba(120, 58, 177, 0.65) 0,
+                rgba(15, 23, 42, 0.98) 45%,
+                rgba(15, 23, 42, 1) 100%);
+    border: 1px solid rgba(148, 163, 255, 0.45);
+    border-radius: 20px;
+    padding: 1.2rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.95),
+        0 18px 40px rgba(0, 0, 0, 0.85),
+        0 0 30px rgba(129, 140, 248, 0.45);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.hobby-card::before {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    background: radial-gradient(circle at top,
+                rgba(56, 189, 248, 0.08),
+                transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.hobby-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    border-color: rgba(56, 189, 248, 0.85);
+    box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 1),
+        0 22px 55px rgba(0, 0, 0, 0.95),
+        0 0 40px rgba(56, 189, 248, 0.9);
+}
+
+.hobby-card:hover::before {
+    opacity: 1;
+}
+
+/* ===== PROJECT GRID & CARD – IntelliJ glowing project tiles ===== */
+
+.project-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 992px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card {
+    padding: 1.3rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    background: radial-gradient(circle at top left,
+                rgba(120, 58, 177, 0.75) 0,
+                rgba(15, 23, 42, 0.98) 40%,
+                rgba(15, 23, 42, 1) 100%);
+    border: 1px solid rgba(148, 163, 255, 0.6);
+    box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.95),
+        0 16px 40px rgba(0, 0, 0, 0.9),
+        0 0 36px rgba(129, 140, 248, 0.6);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(56, 189, 248, 0.12), transparent 65%),
+        radial-gradient(circle at 100% 100%, rgba(251, 191, 36, 0.12), transparent 65%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.9);
+    box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 1),
+        0 20px 55px rgba(0, 0, 0, 0.95),
+        0 0 40px rgba(56, 189, 248, 0.9);
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+/* keep your mobile tweaks */
+@media (max-width: 768px) {
+    .project-card {
+        padding: 1rem;
+    }
+
+    .project-card img {
+        max-width: 140px !important;
+        height: 120px !important;
+    }
+}
+
+/* Tech tags inside project cards */
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+
+.tech-list span {
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(148, 163, 255, 0.55);
+    color: #e5e7ff;
+    box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 1),
+        0 0 14px rgba(129, 140, 248, 0.5);
+}
+
+/* Project buttons */
+.btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.btns a {
+    flex: 1;
+    text-align: center;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.2s ease;
+}
+
+/* primary glowing button */
+.btns a:last-child {
+    background: linear-gradient(135deg, #facc15, #f97316);
+    color: #111827;
+    border: 1px solid rgba(252, 211, 77, 0.9);
+    box-shadow:
+        0 0 20px rgba(252, 211, 77, 0.8),
+        0 10px 30px rgba(0, 0, 0, 0.9);
+}
+
+.btns a:last-child:hover {
+    transform: translateY(-1px);
+    box-shadow:
+        0 0 26px rgba(252, 211, 77, 1),
+        0 14px 36px rgba(0, 0, 0, 1);
+}
+
+/* ghost / secondary button */
+.btns a:first-child {
+    background: transparent;
+    color: #e5e7ff;
+    border: 1px solid rgba(148, 163, 255, 0.7);
+    box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 1),
+        0 0 16px rgba(129, 140, 248, 0.6);
+}
+
+.btns a:first-child:hover {
+    background: radial-gradient(circle at top,
+                rgba(129, 140, 248, 0.35),
+                rgba(15, 23, 42, 0.98));
+    color: #fefce8;
+}
+
+/* ===== IMAGE VIEWER: keep but nudge toward theme ===== */
+
+.viewer {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at top,
+                rgba(15, 23, 42, 0.96),
+                rgba(15, 23, 42, 0.98));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    backdrop-filter: blur(14px);
+    padding: 1rem;
+}
+
+.viewer img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow:
+        0 0 0 2px rgba(15, 23, 42, 1),
+        0 0 30px rgba(129, 140, 248, 0.9),
+        0 24px 60px rgba(0, 0, 0, 1);
+}
+
+.nav,
+.close {
+    position: absolute;
+    background: radial-gradient(circle,
+                rgba(248, 250, 252, 0.95),
+                rgba(226, 232, 240, 0.95));
+    border: none;
+    border-radius: 999px;
+    color: #020617;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.6),
+        0 0 18px rgba(248, 250, 252, 0.9);
+}
+
+/* keep your existing sizes, mobile variants, etc. */
