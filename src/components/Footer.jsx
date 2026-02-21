@@ -44,7 +44,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <FaEnvelope size={20} className="me-2" />
+                                <FaEnvelope size={20} className="me-2"/>
                                 manishrajrnl@zohomail.in
                             </a>
                         </p>
@@ -52,15 +52,26 @@ export default function Footer() {
                         {/* Phone — opens dialer on mobile */}
                         <p>
                             <a
-                                href="tel:+919877370875"
+                                href="tel:+919501421887"
                                 className="text-light d-inline-flex align-items-center"
                             >
                                 <i className="bi bi-telephone-fill me-2"></i>
-                                +91 98773 70875
+                                +91 9501421887
                             </a>
                         </p>
-                    </div>
 
+                        <p>
+                            <a
+                                href="https://workdrive.zoho.in/file/wtnfrbfcd16d2c0b946c0ae6db013b64b35c4"
+                                target="_blank"
+                                className="text-light d-inline-flex align-items-center text-decoration-none"
+                            >
+                                <i className="far fa-file-pdf me-2"></i>
+                                Request My Resume
+                            </a>
+                        </p>
+
+                    </div>
 
 
                     {/* Column 3 — Social Links */}
@@ -69,24 +80,7 @@ export default function Footer() {
                             Follow Me
                         </h5>
                         <div
-                            className="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100011121437261"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="social-btn btn btn-outline-light d-flex align-items-center gap-2"
-                            >
-                                <i className="bi bi-facebook"></i> Facebook
-                            </a>
-
-                            <a
-                                href="https://www.instagram.com/manish.rnl/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="social-btn btn btn-outline-light d-flex align-items-center gap-2"
-                            >
-                                <i className="bi bi-instagram"></i> Instagram
-                            </a>
+                            className="d-flex flex-wrap justify-content-center justify-content-md-start gap-4">
 
                             <a
                                 href="https://www.linkedin.com/in/manishrnl"
@@ -96,6 +90,40 @@ export default function Footer() {
                             >
                                 <i className="bi bi-linkedin"></i> LinkedIn
                             </a>
+                            <a
+                                href="https://github.com/manishrnl"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-btn btn btn-outline-light d-flex align-items-center gap-2"
+                            >
+                                <i className="bi bi-github"></i> GitHub
+                            </a>
+                            <a
+                                href="https://wa.me/919501421887?text=Replying%20via%20Website"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-btn btn btn-outline-light d-flex align-items-center gap-2"
+                            >
+                                <i className="bi bi-whatsapp"></i> WhatsApp
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/manish.rnl/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-btn btn btn-outline-light d-flex align-items-center gap-2"
+                            >
+                                <i className="bi bi-instagram"></i> Instagram️
+                            </a>
+                            <a
+                                href="https://www.facebook.com/profile.php?id=100011121437261"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-btn btn btn-outline-light d-flex align-items-center gap-2"
+                            >
+                                <i className="bi bi-facebook"></i> Facebook
+                            </a>
+
 
                             <a
                                 href="https://x.com/manishrnl"
@@ -106,14 +134,7 @@ export default function Footer() {
                                 <i className="bi bi-twitter-x"></i> Twitter
                             </a>
 
-                            <a
-                                href="https://github.com/manishrnl"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="social-btn btn btn-outline-light d-flex align-items-center gap-2"
-                            >
-                                <i className="bi bi-github"></i> GitHub
-                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -123,8 +144,7 @@ export default function Footer() {
                 <div className="text-center">
                     <p className="mb-1">© 2025 My Portfolio . All rights reserved.</p>
                     <p className="mb-0 small">
-                        Designed with ❤️ by <strong>Manish</strong> —{" "}
-                        {new Date().getFullYear()} <strong>Portfolio</strong>
+                        Designed with ❤️ by <strong>Manish</strong>
                     </p>
                 </div>
             </div>
