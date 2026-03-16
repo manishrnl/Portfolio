@@ -1,19 +1,19 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "../Footer.css"
-import {FaEnvelope} from "react-icons/fa";
+import "../Footer.css";
+import { FaEnvelope } from "react-icons/fa";
+import { ResumeLink } from "../link/Links";
 
 export default function Footer() {
     return (
         <footer className="footer text-white mt-5">
             <div className="container py-5">
                 <div className="row text-center text-md-start align-items-start g-4">
-
                     {/* Column 1 — About / Message */}
                     <div className="col-md-4">
                         <h4 className="fw-semibold mb-3">Let's Connect 🌐</h4>
                         <p className="text-light mb-4">
-                            I'm always open to collaborating on exciting projects or discussing
-                            new ideas.
+                            I'm always open to collaborating on exciting
+                            projects or discussing new ideas.
                         </p>
                     </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <FaEnvelope size={20} className="me-2"/>
+                                <FaEnvelope size={20} className="me-2" />
                                 manishrajrnl@zohomail.in
                             </a>
                         </p>
@@ -62,7 +62,7 @@ export default function Footer() {
 
                         <p>
                             <a
-                                href="https://workdrive.zoho.in/file/wtnfrbfcd16d2c0b946c0ae6db013b64b35c4"
+                                href={ResumeLink}
                                 target="_blank"
                                 className="text-light d-inline-flex align-items-center text-decoration-none"
                             >
@@ -70,18 +70,14 @@ export default function Footer() {
                                 Request My Resume
                             </a>
                         </p>
-
                     </div>
-
 
                     {/* Column 3 — Social Links */}
                     <div className="col-md-4">
                         <h5 className="text-uppercase mb-4 font-weight-bold text-warning">
                             Follow Me
                         </h5>
-                        <div
-                            className="d-flex flex-wrap justify-content-center justify-content-md-start gap-4">
-
+                        <div className="d-flex flex-wrap justify-content-center justify-content-md-start gap-4">
                             <a
                                 href="https://www.linkedin.com/in/manishrnl"
                                 target="_blank"
@@ -124,7 +120,6 @@ export default function Footer() {
                                 <i className="bi bi-facebook"></i> Facebook
                             </a>
 
-
                             <a
                                 href="https://x.com/manishrnl"
                                 target="_blank"
@@ -133,16 +128,16 @@ export default function Footer() {
                             >
                                 <i className="bi bi-twitter-x"></i> Twitter
                             </a>
-
-
                         </div>
                     </div>
                 </div>
 
-                <hr className="border-light my-4"/>
+                <hr className="border-light my-4" />
 
                 <div className="text-center">
-                    <p className="mb-1">© 2025 My Portfolio . All rights reserved.</p>
+                    <p className="mb-1">
+                        © 2025 My Portfolio . All rights reserved.
+                    </p>
                     <p className="mb-0 small">
                         Designed with ❤️ by <strong>Manish</strong>
                     </p>
