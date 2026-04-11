@@ -24,6 +24,7 @@ export const projects = [
         images: [
 
             "/images/money-manager/dashboard.png",
+            "/images/money-manager/cold-start.png",
             "/images/money-manager/filter.png",
             "/images/money-manager/income.png",
             "/images/money-manager/expense.png",
@@ -32,6 +33,8 @@ export const projects = [
             "/images/money-manager/add-category.png",
             "/images/money-manager/add-incomes.png",
             "/images/money-manager/add-expenses.png",
+            "/images/money-manager/income-mail.png",
+            "/images/money-manager/expense-mail.png",
 
         ],
         runLink: "https://manishrnl-money-manager.netlify.app/dashboard",
@@ -195,6 +198,8 @@ export const projects = [
             "/images/Portfolio/Main_screen.png",
             "/images/Portfolio/Portfolio5.png",
             "/images/Portfolio/Portfolio1.png",
+            "/images/Portfolio/Portfolio2.png",
+            "/images/Portfolio/Portfolio3.png",
             "/images/Portfolio/Portfolio4.png",
         ],
         viewLink: "https://github.com/manishrnl/Portfolio",
