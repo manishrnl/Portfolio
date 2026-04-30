@@ -99,7 +99,7 @@ export default function Footer() {
                                 { href: "https://www.linkedin.com/in/manishrnl", icon: BiLogoLinkedin, color: "#0077b5", label: "LinkedIn", border: "border-gray-300", bg: "bg-white", text: "text-dark" },
                                 { href: "https://github.com/manishrnl", icon: BiLogoGithub, color: "white", label: "Github", border: "border-gray-900", bg: "bg-dark", text: "text-white" },
                                 { href: "https://wa.me/919501421887", icon: BiLogoWhatsapp, color: "#25D366", label: "WhatsApp", border: "border-success", bg: "bg-light", hover: "hover:bg-green-50" },
-                                { href: "https://www.instagram.com/manish.rnl/", icon: BiLogoInstagram, color: "#e4405f", label: "Instagram", border: "border-danger", bg: "bg-light", hover: "hover:bg-red-50" },
+                                { href: "https://www.instagram.com/manishrnl/", icon: BiLogoInstagram, color: "#e4405f", label: "Instagram", border: "border-danger", bg: "bg-light", hover: "hover:bg-red-50" },
                                 { href: "https://www.facebook.com/profile.php?id=100011121437261", icon: BiLogoFacebook, color: "#1877F2", label: "Facebook", border: "border-primary", bg: "bg-light", hover: "hover:bg-blue-50" },
                                 { href: "https://x.com/manishrnl", icon: BiLogoTwitter, color: "#000000", label: "Twitter", border: "border-secondary", bg: "bg-light", hover: "hover:bg-gray-100" }
                             ].map((social, i) => (
