@@ -11,7 +11,7 @@ export const projects = [
                 </p>
                 <p>
                     Built using <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">PostgreSQL • Spring Boot • React</span>,
+                        className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">PostgreSQL • Spring Boot • React</span>,
                     the application allows for seamless tracking of incomes, expenses, and
                     custom categories.
                 </p>
@@ -48,29 +48,32 @@ export const projects = [
             <div className="text-gray-600 text-lg leading-relaxed space-y-4">
                 <p>
                     A fully functional <span
-                    className="font-bold text-gray-900">Airbnb Clone</span> replicating
+                        className="font-bold text-gray-900">Airbnb Clone</span> replicating
                     the modern booking experience with property listings and image uploads.
                 </p>
                 <p>
                     Engineered with <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Spring Boot & React</span>,
+                        className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Spring Boot & React</span>,
                     it includes secure booking management and <span
-                    className="font-bold text-gray-900">JWT-based authentication</span>.
+                        className="font-bold text-gray-900">JWT-based authentication</span>.
                 </p>
                 <p>
                     The UI is built with <span
-                    className="font-bold text-gray-900">Tailwind CSS</span> for
+                        className="font-bold text-gray-900">Tailwind CSS</span> for
                     a premium, responsive feel across all devices.
                 </p>
             </div>
         ),
         images: [
-            "/images/Airbnb Clone/HomePage.png",
-            "/images/Airbnb Clone/AboutUs.png",
-            "/images/Airbnb Clone/ContactUs.png",
-            "/images/Airbnb Clone/Services.png",
             "/images/Airbnb Clone/SignUp.png",
             "/images/Airbnb Clone/Login.png",
+            "/images/Airbnb Clone/HomePage.png",
+            "/images/Airbnb Clone/Hotels.png",
+            "/images/Airbnb Clone/Rooms.png",
+            "/images/Airbnb Clone/Rooms2.png",
+            "/images/Airbnb Clone/Services.png",
+            "/images/Airbnb Clone/AboutUs.png",
+            "/images/Airbnb Clone/ContactUs.png",
         ],
         runLink: "https://manishrnl-1-hotel-clone.netlify.app/",
         viewLink: "https://github.com/manishrnl/AirBnb-Full-Stack-React.git",
@@ -87,13 +90,13 @@ export const projects = [
                 </p>
                 <p>
                     Features <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Kafka Event-Driven Messaging</span> and <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Kubernetes Orchestration</span>.
+                        className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Kafka Event-Driven Messaging</span> and <span
+                            className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Kubernetes Orchestration</span>.
                 </p>
                 <p>
                     Uses <span className="font-bold text-gray-900">Neo4j</span> for social
                     graph data and <span
-                    className="font-bold text-gray-900">Zipkin</span> for distributed
+                        className="font-bold text-gray-900">Zipkin</span> for distributed
                     tracing request flows.
                 </p>
             </div>
@@ -119,13 +122,13 @@ export const projects = [
                 </p>
                 <p>
                     Built with <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">JavaFX & MySQL</span>,
+                        className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">JavaFX & MySQL</span>,
                     featuring a modern animated interface for managing courses, fees, and
                     library records.
                 </p>
                 <p>
                     Provides <span
-                    className="font-bold text-gray-900">secure authentication</span> for
+                        className="font-bold text-gray-900">secure authentication</span> for
                     6 distinct user roles with integrated analytics and reporting tools.
                 </p>
             </div>
@@ -153,12 +156,12 @@ export const projects = [
                 </p>
                 <p>
                     Utilizes <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">JavaFX & MySQL JDBC</span> to
+                        className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">JavaFX & MySQL JDBC</span> to
                     generate comprehensive monthly and custom-range reports.
                 </p>
                 <p>
                     Supports <span
-                    className="font-bold text-gray-900">theme switching</span> and
+                        className="font-bold text-gray-900">theme switching</span> and
                     accessibility customization via a clean FXML-based UI.
                 </p>
             </div>
@@ -184,12 +187,12 @@ export const projects = [
                 </p>
                 <p>
                     Leverages <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">React.js & Framer Motion</span> for
+                        className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">React.js & Framer Motion</span> for
                     smooth animations and a seamless browsing experience.
                 </p>
                 <p>
                     Fully responsive design ensuring <span
-                    className="font-bold text-gray-900">pixel-perfect display</span> across
+                        className="font-bold text-gray-900">pixel-perfect display</span> across
                     all modern web browsers and devices.
                 </p>
             </div>
@@ -216,12 +219,12 @@ export const projects = [
                 </p>
                 <p>
                     Supports <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Standard, Scientific & Unit Conversion</span> modes
+                        className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Standard, Scientific & Unit Conversion</span> modes
                     with a responsive FXML interface.
                 </p>
                 <p>
                     Features include <span
-                    className="font-bold text-gray-900">memory storage</span> and
+                        className="font-bold text-gray-900">memory storage</span> and
                     history tracking for efficient computational workflows.
                 </p>
             </div>
@@ -241,12 +244,12 @@ export const projects = [
             <div className="text-gray-600 text-lg leading-relaxed space-y-4">
                 <p>
                     A robust desktop banking application simulating <span
-                    className="font-bold text-gray-900">ATM-style functionality</span> using
+                        className="font-bold text-gray-900">ATM-style functionality</span> using
                     Java Swing.
                 </p>
                 <p>
                     Handles <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Deposit, Withdrawal & Transaction Tracking</span> through
+                        className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Deposit, Withdrawal & Transaction Tracking</span> through
                     secure event-driven UI logic.
                 </p>
                 <p>
@@ -273,12 +276,12 @@ export const projects = [
                 </p>
                 <p>
                     Features <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Heuristic AI Logic</span> for
+                        className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Heuristic AI Logic</span> for
                     intelligent responses and real-time win-tracking.
                 </p>
                 <p>
                     Clean <span
-                    className="font-bold text-gray-900">FXML architecture</span> with
+                        className="font-bold text-gray-900">FXML architecture</span> with
                     visual feedback for enhanced user engagement.
                 </p>
             </div>
@@ -297,12 +300,12 @@ export const projects = [
             <div className="text-gray-600 text-lg leading-relaxed space-y-4">
                 <p>
                     A real-time implementation of <span
-                    className="font-bold text-gray-900">Rock-Paper-Scissors</span> using
+                        className="font-bold text-gray-900">Rock-Paper-Scissors</span> using
                     JavaFX animated outcomes.
                 </p>
                 <p>
                     Showcases <span
-                    className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Event Handling & UI Design</span> with
+                        className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">Event Handling & UI Design</span> with
                     a competitive score tracking system.
                 </p>
             </div>
