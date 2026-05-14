@@ -157,12 +157,12 @@ const openInNewPage = (type, href) => {
                                 flex items-center justify-center gap-2 bg-blue-100 text-blue-700 hover:bg-blue-300 hover:text-green-950 px-6 py-2.5 !rounded-full font-bold text-base min-w-[180px] transition-all disabled:opacity-80"
                             >
                                 {loading.resume ? (
-                                    <><Loader2 className="w-4 h-4 animate-spin"/> Downloading CV...</>
+                                    <><Loader2 className="w-4 h-4 animate-spin"/> Opening CV...</>
                                 ) : (
                                     <><Download size={20}
                                     className="transition-transform
                                    group-hover:rotate-[360deg] duration-700 text-green-600"/>
-                                   Download CV</>
+                                   View CV</>
                                 )}
                             </motion.button>
                         </div>
@@ -175,7 +175,7 @@ const openInNewPage = (type, href) => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {[
                         {value: "2026", label: "Graduation Year", icon: "🎓"},
-                        {value: "99.9%", label: "System Uptime", icon: "⚡"},
+                        {value: "70%", label: "System Uptime", icon: "⚡"},
                         {value: "Clean", label: "Architecture", icon: "🏗️"},
                         {value: "40%", label: "Perf Optimization", icon: "📈"},
                     ].map((stat, index) => (
