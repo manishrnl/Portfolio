@@ -165,7 +165,7 @@ const Projects = () => {
                         "Real screenshots for every important workflow",
                         "Clear technology choices and source links",
                     ].map((item) => (
-                        <div key={item} className="font-tech rounded-2xl border border-gray-100 bg-white/70 px-4 py-3 text-xs font-semibold text-gray-700 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:bg-blue-50 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/70 dark:text-zinc-200 dark:hover:bg-zinc-800">
+                        <div key={item} className="font-tech rounded-2xl border border-gray-100 bg-white/70 px-4 py-3 text-m font-semibold text-gray-700 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:bg-blue-50 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/70 dark:text-zinc-200 dark:hover:bg-zinc-800">
                             {item}
                         </div>
                     ))}

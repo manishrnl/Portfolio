@@ -256,15 +256,15 @@ const Resume = () => {
                     ))}
                 </div>
 
-                <div className="mt-8 flex flex-col items-center justify-between gap-5 rounded-[2rem] border border-white/80 bg-white/80 p-5 shadow-xl backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 dark:border-zinc-800 dark:bg-zinc-900/85 dark:hover:bg-zinc-800 md:flex-row md:p-6">
+                <div className="mt-8 flex flex-col items-center justify-between gap-5 rounded-[2rem] border border-white/80 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 p-5 shadow-xl backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 dark:border-zinc-800 dark:bg-zinc-900/85 dark:hover:bg-zinc-800 md:flex-row md:p-6">
                     <div>
-                        <p className="mb-1 text-[10px] font-black uppercase tracking-[0.22em] text-gray-500 dark:text-zinc-400">
+                        <p className="mb-1 text-[10px] font-black uppercase tracking-[0.22em] text-white dark:text-zinc-400">
                             Full Document
                         </p>
-                        <h2 className="mb-1 text-2xl font-black text-gray-950 dark:text-zinc-50">
+                        <h2 className="mb-1 text-2xl font-black text-white dark:text-zinc-50">
                             View online or download the PDF version.
                         </h2>
-                        <p className="mb-0 text-sm leading-relaxed text-gray-600 dark:text-zinc-300">
+                        <p className="mb-0 text-sm leading-relaxed text-white dark:text-zinc-300">
                             The preview opens in a new tab. The download button uses the direct Google Drive file download link.
                         </p>
                     </div>

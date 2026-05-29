@@ -34,7 +34,7 @@ export default function PremiumNavBar({theme, onToggleTheme}) {
     const navLinks = [
         {to: "/", label: "Home"},
         {to: "/about-us", label: "Profile"},
-        {to: "/projects", label: "Build Lab"},
+        {to: "/projects", label: "My Builds"},
         {to: "/contact-us", label: "Connect"},
         {to: "/resume", label: "Resume"},
     ];
@@ -62,23 +62,23 @@ export default function PremiumNavBar({theme, onToggleTheme}) {
                 <Link to="/" className="group flex min-w-0 items-center gap-2 text-decoration-none sm:gap-3">
                     <span className="block min-w-0">
                         <span className="font-brand block bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-base font-black leading-tight text-transparent drop-shadow-[0_0_10px_rgba(124,77,255,0.35)]">
-                            {"{Manish.dev}"}
+                            {"Manish"}
                         </span>
-                        <span className="font-tech block bg-gradient-to-r from-emerald-500 via-blue-500 to-yellow-500 bg-clip-text text-[10px] font-bold leading-tight text-transparent">
+                        <span className=" block bg-gradient-to-r from-emerald-500 via-blue-500 to-yellow-500 bg-clip-text text-[10px] font-bold leading-tight text-transparent">
                             Spring | React | Systems
                         </span>
                     </span>
                 </Link>
 
                 {/* Desktop Navigation */}
-                <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 bg-transparent px-5 py-1.5 text-zinc-700 dark:text-zinc-200 md:flex">
+                <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 bg-transparent px-5 py-1.5 md:flex">
                     {navLinks.map((item) => (
                         <Link
                             key={item.to}
                             to={item.to}
                             onMouseEnter={() => setHoveredPath(item.to)}
                             onMouseLeave={() => setHoveredPath(location.pathname)}
-                            className="font-brand group text-decoration-none relative z-10 overflow-hidden px-1 py-2 text-sm font-black uppercase tracking-[0.16em] transition-all duration-300 hover:-translate-y-0.5"
+                            className="group text-decoration-none relative z-10 overflow-hidden px-1 py-2 text-m tracking-[0.16em] transition-all duration-300 hover:-translate-y-0.5"
                         >
                             <span className={`relative z-10 transition-all duration-300 ${getDesktopLinkColor(item.to)}`}>
                                 {item.label}

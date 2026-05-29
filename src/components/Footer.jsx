@@ -79,7 +79,7 @@ export default function Footer() {
                             <p className="font-tech mb-1 text-xs font-black uppercase tracking-[0.22em] text-gray-500 dark:text-zinc-400">
                                 Engineering Signal
                             </p>
-                            <p className="font-display mb-0 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-lg font-black text-transparent">
+                            <p className="font-display mb-0 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-lg font-black text-transparent tracking-[0.08em]">
                                 Backend Discipline, Premium UI, Practical Delivery
                             </p>
                         </div>
@@ -94,8 +94,8 @@ export default function Footer() {
                                 I&apos;m open to backend discussions, Spring Boot reviews, REST API work,
                                 SDE opportunities, collaboration, and practical product ideas that need clean execution.
                             </p>
-                            <div className="font-tech inline-flex border-b border-yellow-400 pb-2 text-xs font-black uppercase tracking-[0.18em] text-gray-600 dark:text-zinc-300">
-                                {"spring.datasource -> hibernate.jpa -> rest.api -> react.ui"}
+                            <div className="font-tech inline-flex border-b border-yellow-400 pb-2 text-xs font-black uppercase tracking-[0.08em] text-gray-600 dark:text-zinc-300">
+                                {"spring datasource -> hibernate jpa -> rest api -> react ui"}
                             </div>
                         </div>
 
@@ -126,7 +126,7 @@ export default function Footer() {
                             <h3 className="font-tech mb-4 text-sm font-black uppercase tracking-[0.22em] text-gray-500 dark:text-zinc-400">
                                 Digital Footprint
                             </h3>
-                            <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
+                            <div className="flex flex-wrap justify-center gap-5 lg:justify-start">
                                 {socialLinks.map((social) => (
                                     <a
                                         key={social.label}
@@ -140,7 +140,7 @@ export default function Footer() {
                                             size={17}
                                             color={social.color}
                                         />
-                                        <span className="font-tech text-[11px] font-black uppercase tracking-[0.12em]">
+                                        <span className="font-tech text-[11px] font-black tracking-[0.12em]">
                                             {social.label}
                                         </span>
                                     </a>
@@ -156,7 +156,7 @@ export default function Footer() {
                         <p className="mb-0 font-semibold">
                             Built as{" "}
                             <strong className="bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-transparent">
-                                Manish.dev
+                                Manish
                             </strong>
                         </p>
                     </div>

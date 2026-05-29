@@ -5,18 +5,18 @@
 html,
 body,
 #root {
-    font-family: "Manrope", "Poppins", ui-sans-serif, system-ui, sans-serif;
+    font-family:  "Poppins","Manrope", ui-sans-serif, system-ui, sans-serif;
 }
 
 :where(h1, h2, h3),
 .font-display,
 .font-brand {
-    font-family: "Space Grotesk", "Poppins", "Manrope", ui-sans-serif, system-ui, sans-serif;
+    font-family: ui-sans-serif, "Poppins", "Manrope","Space Grotesk",  system-ui, sans-serif;
 }
 
 .font-tech,
 :where(code, kbd, samp, pre) {
-    font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-family:  Consolas, "Liberation Mono", monospace;
 }
 
 button,
