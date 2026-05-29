@@ -15,7 +15,7 @@ export default function Motto() {
     const randomQuote = useMemo(() => {
         const index = Math.floor(Math.random() * quotes.length);
         return quotes[index];
-    }, [quotes]);
+    }, []);
 
     return (
         <motion.div
@@ -38,7 +38,7 @@ export default function Motto() {
                     />
                 </div>
                 {/* Reduced text size from text-xl to text-sm/base and padding */}
-                <h2 className="font-black text-sm md:text-base uppercase tracking-[0.25em] text-blue-800 pt-3">
+                <h2 className="font-tech font-black text-sm md:text-base uppercase tracking-[0.25em] text-blue-800 pt-3 dark:text-yellow-300">
                     Core Philosophy
                 </h2>
             </div>
@@ -46,31 +46,31 @@ export default function Motto() {
             <div className="space-y-4">
                 {/* Scaled down quote from text-3xl to text-xl/2xl */}
                 <motion.p
-                    className="text-xl md:text-2xl font-serif font-bold text-yellow-800 leading-relaxed pt-4"
+                    className="font-display text-xl md:text-2xl font-bold text-yellow-800 leading-relaxed pt-4 dark:text-yellow-200"
                 >
                     "{randomQuote.sa}"
                 </motion.p>
 
                 <div className="flex justify-center items-center gap-3">
-                    <div className="h-[1px] w-10 bg-gradient-to-r from-transparent to-gray-700"></div>
+                    <div className="h-[1px] w-10 bg-gradient-to-r from-transparent to-gray-700 dark:to-zinc-500"></div>
                     <div className="h-1 w-1 rounded-full bg-blue-500"></div>
-                    <div className="h-[1px] w-10 bg-gradient-to-l from-transparent to-gray-700"></div>
+                    <div className="h-[1px] w-10 bg-gradient-to-l from-transparent to-gray-700 dark:to-zinc-500"></div>
                 </div>
 
                 <div className="space-y-2 px-4">
                     {/* Hindi translation scaled from text-2xl to text-lg */}
-                    <p className="text-base md:text-lg text-gray-900 font-medium pt-4">
+                    <p className="font-display text-base md:text-lg text-gray-900 font-medium pt-4 dark:text-zinc-100">
                         {randomQuote.hi}
                     </p>
                     {/* English translation scaled from text-2xl to text-base/lg */}
-                    <p className="text-lg md:text-xl font-semibold text-shadow-red-500 leading-snug pt-2">
+                    <p className="text-lg md:text-xl font-semibold text-shadow-red-500 leading-snug pt-2 dark:text-zinc-300">
                         {randomQuote.en}
                     </p>
                 </div>
             </div>
 
             <motion.div
-                className="pt-6 border-t border-gray-800 w-[50%] mx-auto mt-8"
+                className="pt-6 border-t border-gray-800 w-[50%] mx-auto mt-8 dark:border-zinc-700"
                 style={{originX: 0.5}}
                 initial={{scaleX: 0, opacity: 0}}
                 whileInView={{scaleX: 1, opacity: 1}}
@@ -82,8 +82,8 @@ export default function Motto() {
                 viewport={{once: true}}
             >
                 {/* Reduced footer text from text-3xl to text-lg/xl */}
-                <p className="text-lg md:text-xl font-mono text-black tracking-widest uppercase mt-2">
-                    Code • Create • Inspire
+                <p className="font-tech text-lg md:text-xl text-black tracking-widest uppercase mt-2 dark:text-zinc-100">
+                    Spring | Systems | Interfaces
                 </p>
             </motion.div>
         </motion.div>

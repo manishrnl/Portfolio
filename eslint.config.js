@@ -23,7 +23,30 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'no-unused-vars': ['error', {
+        varsIgnorePattern: '^[A-Z_]|^motion$',
+        argsIgnorePattern: '^[A-Z_]',
+      }],
+    },
+  },
+  {
+    files: ['netlify/functions/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      globals: globals.node,
+      parserOptions: {
+        sourceType: 'module',
+      },
+    },
+  },
+  {
+    files: ['vite.config.js'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      globals: globals.node,
+      parserOptions: {
+        sourceType: 'module',
+      },
     },
   },
 ])
