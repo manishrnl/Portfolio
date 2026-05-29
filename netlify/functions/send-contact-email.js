@@ -22,12 +22,12 @@ const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 const getEnv = (name) => process.env[name]?.trim();
 
 const getProfileUrl = () => {
-    const frontendUrl = getEnv("FRONTEND_URL") || "https://www.manishrnl.in/";
+    const frontendUrl = getEnv("FRONTEND_URL") || getEnv("URL") || "http://localhost:5173";
 
     try {
         return new URL("/about-us", frontendUrl.endsWith("/") ? frontendUrl : `${frontendUrl}/`).toString();
     } catch {
-        return "https://www.manishrnl.in/about-us";
+        return "http://localhost:5173/about-us";
     }
 };
 
@@ -182,7 +182,7 @@ const sendWithBrevoSmtp = async ({
     htmlContent,
     textContent,
 }) => {
-    const smtpHost = getEnv("MAIL_HOST") || getEnv("BREVO_SMTP_HOST") || "smtp-relay.brevo.com";
+    const smtpHost = getEnv("MAIL_HOST") || getEnv("BREVO_SMTP_HOST");
     const smtpPort = Number(getEnv("MAIL_PORT") || getEnv("BREVO_SMTP_PORT") || 587);
     const smtpUser = getEnv("BREVO_USERNAME") || getEnv("MAIL_USERNAME") || getEnv("MAIL_USER");
     const smtpPass =
@@ -190,8 +190,8 @@ const sendWithBrevoSmtp = async ({
         getEnv("MAIL_PASSWORD") ||
         (getEnv("BREVO_API_KEY")?.startsWith("xsmtpsib-") ? getEnv("BREVO_API_KEY") : undefined);
 
-    if (!smtpUser || !smtpPass) {
-        throw new Error("Brevo SMTP credentials are missing.");
+    if (!smtpHost || !smtpUser || !smtpPass) {
+        throw new Error("Brevo SMTP configuration is missing.");
     }
 
     const transporter = nodemailer.createTransport({

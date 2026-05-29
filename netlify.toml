@@ -3,6 +3,9 @@
   publish = "dist"
   functions = "netlify/functions"
 
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "MAIL_FROM_NAME,MAIL_HOST,FRONTEND_URL,MAIL_PROVIDER"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
