@@ -30,7 +30,7 @@ const About = () => {
                 {/* Section Header - Scaled down from 7xl to 5xl */}
                 <div className="text-center mb-12">
                     <motion.h2
-                        className="font-display mb-5 text-4xl font-bold leading-tight text-gray-900 dark:text-zinc-50 md:text-6xl"
+                        className="font-display mb-5 text-[40px] font-bold leading-tight text-gray-900 dark:text-zinc-50 md:text-5xl"
                         variants={fadeUp}
                         initial="hidden"
                         whileInView="show"
@@ -63,7 +63,7 @@ const About = () => {
                     whileInView="show"
                     viewport={{once: true}}
                 >
-                    <p className="text-lg md:text-xl leading-relaxed text-center italic">
+                    <p className="text-center text-base leading-relaxed italic md:text-lg">
                         "Hello there! 👋 I'm <span className="text-gray-950 font-semibold dark:text-zinc-50">Manish Kumar</span> —
                         a Software Development Engineer aspirant specializing in <span
                         className="text-gray-950 border-b border-blue-500 dark:text-zinc-50">scalable Microservices</span> and
@@ -88,15 +88,15 @@ const About = () => {
                         whileInView="show"
                         viewport={{once: true}}
                     >
-                        <h3 className="text-xl font-bold mb-3 text-gray-950 flex items-center gap-2 dark:text-zinc-50">
+                        <h3 className="font-subheading mb-3 flex items-center gap-2 text-2xl text-gray-950 dark:text-zinc-50">
                             My Engineering Arc <span className="group-hover:rotate-12 transition-transform">🚀</span>
                         </h3>
-                        <p className="text-sm md:text-base leading-relaxed text-gray-700 dark:text-zinc-300">
+                        <p className="text-base leading-relaxed text-gray-700 dark:text-zinc-300 md:text-lg">
                             Currently pursuing B.Tech (C.S.E) with a focus on System Design, my
                             path evolved from simple logic to distributed platforms. I am
                             dedicated to building high-performance systems.
                         </p>
-                        <p className="text-sm md:text-base leading-relaxed text-gray-700 dark:text-zinc-300">
+                        <p className="text-base leading-relaxed text-gray-700 dark:text-zinc-300 md:text-lg">
                             I learn by shipping complete projects: desktop systems for fundamentals,
                             Spring Boot APIs for backend depth, and React dashboards for presentation.
                             That mix helps me reason about tradeoffs across the whole stack.
@@ -117,12 +117,12 @@ const About = () => {
 
                         viewport={{once: true}}
                     >
-                        <h3 className="font-display text-xl font-bold mb-4 text-gray-950 dark:text-zinc-50">Experience Timeline 💼</h3>
+                        <h3 className="font-subheading mb-4 text-2xl text-gray-950 dark:text-zinc-50">Experience Timeline 💼</h3>
                         <div className="space-y-5">
                             {experiences.map((exp, index) => (
                                 <div key={index} className="border-l-2 border-blue-500/50 pl-4 transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1">
                                     <h5 className="text-base font-bold text-gray-900 dark:text-zinc-100">{exp.title}</h5>
-                                    <span className="font-tech text-xs text-blue-800 uppercase tracking-widest">{exp.date}</span>
+                                    <span className="font-brand text-sm uppercase tracking-widest text-blue-800">{exp.date}</span>
                                     <ul className="mt-1 text-sm text-gray-600 space-y-0.5 dark:text-zinc-300">
                                         {exp.points.map((p, i) => <li key={i}>• {p}</li>)}
                                     </ul>
@@ -140,8 +140,8 @@ const About = () => {
                     whileInView="show"
                     viewport={{once: true}}
                 >
-                    <h3 className="font-display mb-3 bg-gradient-to-r from-blue-600 via-violet-600 to-green-500 bg-clip-text text-2xl font-black text-transparent md:text-3xl">Spring-To-UI Toolchain ⚡</h3>
-                    <p className="mx-auto max-w-3xl text-sm md:text-base leading-relaxed text-gray-600 dark:text-zinc-300">
+                    <h3 className="font-subheading mb-3 bg-gradient-to-r from-blue-600 via-violet-600 to-green-500 bg-clip-text text-2xl text-transparent md:text-3xl">Spring-To-UI Toolchain ⚡</h3>
+                    <p className="mx-auto max-w-3xl text-base leading-relaxed text-gray-600 dark:text-zinc-300 md:text-lg">
                         A practical stack for building real products: backend APIs, authentication,
                         databases, message queues, deployment tools, and responsive frontend presentation.
                     </p>
@@ -158,7 +158,7 @@ const About = () => {
                                 <img
                                     src={skill.icon} alt=""
                                     className="w-5 h-5 transition-transform group-hover:rotate-[360deg] duration-700 "/>
-                                <span className="font-tech text-xs font-medium text-gray-700 dark:text-zinc-200 dark:group-hover:text-zinc-950">{skill
+                                <span className="font-brand text-sm text-gray-700 dark:text-zinc-200 dark:group-hover:text-zinc-950">{skill
                                     .name}</span>
                             </motion.a>
                         ))}
@@ -207,7 +207,7 @@ const About = () => {
                         whileInView="show"
 
                     >
-                        <h3 className="font-display text-xl font-bold mb-3">Beyond Code 💡</h3>
+                        <h3 className="font-subheading mb-3 text-2xl">Beyond Code 💡</h3>
                         <p className="text-gray-700 text-sm leading-relaxed dark:text-zinc-300">
                             I believe great engineering is rooted in clarity and strategy,
                             inspired by timeless philosophy and competitive sports.
@@ -228,7 +228,7 @@ const About = () => {
                                 initial="hidden"
                                 whileInView="show"
                             >
-                                <h5 className="font-tech text-yellow-800 font-bold mb-1 text-xs">{hobby.title}</h5>
+                                <h5 className="font-brand mb-1 text-sm font-semibold text-yellow-800">{hobby.title}</h5>
                                 <p className="text-gray-600 text-sm leading-relaxed dark:text-zinc-300">{hobby.description}</p>
                             </motion.div>
                         ))}

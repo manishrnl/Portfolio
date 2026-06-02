@@ -137,7 +137,7 @@ const Contact = () => {
 
             <div className="relative z-10 mx-auto w-[90%] max-w-[1500px]">
                 <div className="mb-10 text-center">
-                    <h1 className="font-display mx-auto mb-5 max-w-5xl text-4xl font-bold leading-tight text-gray-900 dark:text-zinc-50 md:text-6xl">
+                    <h1 className="font-display mx-auto mb-5 max-w-5xl text-[40px] font-bold leading-tight text-gray-900 dark:text-zinc-50 md:text-5xl">
                         {"{Let's Build}"}
                         <span className="bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-transparent drop-shadow-[0_0_14px_rgba(124,77,255,0.35)]">
                             {" "}Connect With Me{" "}
@@ -157,10 +157,10 @@ const Contact = () => {
                             key={item.label}
                             className="rounded-2xl border border-white/80 bg-white/75 p-4 shadow-sm backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1 dark:border-zinc-800 dark:bg-zinc-900/75"
                         >
-                            <p className="font-tech mb-1 text-[10px] font-black uppercase tracking-[0.22em] text-gray-500 dark:text-zinc-400">
+                            <p className="font-brand mb-1 text-sm uppercase tracking-[0.18em] text-gray-500 dark:text-zinc-400">
                                 {item.label}
                             </p>
-                            <p className="font-display mb-0 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-lg font-black text-transparent">
+                            <p className="font-subheading mb-0 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-lg text-transparent">
                                 {item.value}
                             </p>
                         </div>
@@ -175,14 +175,14 @@ const Contact = () => {
                         className="space-y-6"
                     >
                         <div className="rounded-[2rem] border border-white/80 bg-white/80 p-6 shadow-xl backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 dark:border-zinc-800 dark:bg-zinc-900/85">
-                            <div className="font-tech mb-5 inline-flex items-center gap-2 rounded-full border border-yellow-200 bg-yellow-50 px-4 py-2 text-xs font-black uppercase tracking-[0.2em] text-yellow-800 dark:border-yellow-500/30 dark:bg-yellow-500/10 dark:text-yellow-300">
+                            <div className="font-brand mb-5 inline-flex items-center gap-2 rounded-full border border-yellow-200 bg-yellow-50 px-4 py-2 text-sm uppercase tracking-[0.16em] text-yellow-800 dark:border-yellow-500/30 dark:bg-yellow-500/10 dark:text-yellow-300">
                                 <Sparkles size={15}/>
                                 Contact Hub
                             </div>
-                            <h2 className="font-display mb-3 text-3xl font-black tracking-tight text-gray-950 dark:text-zinc-50">
+                            <h2 className="font-subheading mb-3 text-2xl tracking-tight text-gray-950 dark:text-zinc-50">
                                 Direct channels for focused conversations.
                             </h2>
-                            <p className="mb-6 text-sm leading-relaxed text-gray-600 dark:text-zinc-300">
+                            <p className="mb-6 text-base leading-relaxed text-gray-600 dark:text-zinc-300">
                                 I respond best when the message includes the purpose, expected outcome,
                                 current stack, and what decision needs to be made next.
                             </p>
@@ -200,13 +200,13 @@ const Contact = () => {
                                             <Icon className={`${color} transition-transform duration-700 group-hover:rotate-[360deg]`} size={22}/>
                                         </span>
                                         <span>
-                                            <span className="font-display block text-sm font-black text-gray-950 dark:text-zinc-50">
+                                            <span className="font-subheading block text-base text-gray-950 dark:text-zinc-50">
                                                 {label}
                                             </span>
                                             <span className="block text-sm font-semibold text-gray-700 dark:text-zinc-200">
                                                 {value}
                                             </span>
-                                            <span className="mt-1 block text-xs leading-relaxed text-gray-500 dark:text-zinc-400">
+                                            <span className="mt-1 block text-sm leading-relaxed text-gray-500 dark:text-zinc-400">
                                                 {meta}
                                             </span>
                                         </span>
@@ -218,7 +218,7 @@ const Contact = () => {
                         <div className="rounded-[2rem] border border-white/80 bg-white/80 p-5 shadow-xl backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 dark:border-zinc-800 dark:bg-zinc-900/85">
                             <div className="mb-3 flex items-center gap-2">
                                 <Clock3 className="text-blue-600 dark:text-yellow-300" size={20}/>
-                                <h3 className="font-display mb-0 text-xl font-black text-gray-950 dark:text-zinc-50">
+                                <h3 className="font-subheading mb-0 text-2xl text-gray-950 dark:text-zinc-50">
                                     Message Checklist
                                 </h3>
                             </div>
@@ -245,14 +245,14 @@ const Contact = () => {
                         />
 
                         <div className="mb-7">
-                            <div className="font-tech mb-5 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-black uppercase tracking-[0.2em] text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-300">
+                            <div className="font-brand mb-5 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm uppercase tracking-[0.16em] text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-300">
                                 <Send size={15}/>
                                 Send Details
                             </div>
-                            <h2 className="font-display mb-3 text-3xl font-black leading-tight text-gray-950 dark:text-zinc-50 md:text-4xl">
+                            <h2 className="font-subheading mb-3 text-2xl leading-tight text-gray-950 dark:text-zinc-50 md:text-3xl">
                                 Write a clear message and I’ll take it from there.
                             </h2>
-                            <p className="mb-0 text-sm leading-relaxed text-gray-600 dark:text-zinc-300">
+                            <p className="mb-0 text-base leading-relaxed text-gray-600 dark:text-zinc-300">
                                 Mention whether this is a project, role, review, collaboration, or
                                 technical discussion. Clear requirements help me respond faster and more usefully.
                             </p>
@@ -260,7 +260,7 @@ const Contact = () => {
 
                         <div className="mb-6 grid grid-cols-1 gap-5 md:grid-cols-2">
                             <div className="transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1">
-                                <label className="font-tech mb-1.5 block text-[10px] font-black uppercase tracking-[0.2em] text-gray-700 dark:text-zinc-300">
+                                <label className="font-brand mb-1.5 block text-sm uppercase tracking-[0.16em] text-gray-700 dark:text-zinc-300">
                                     Full Name
                                 </label>
                                 <input
@@ -273,7 +273,7 @@ const Contact = () => {
                                 />
                             </div>
                             <div className="transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1">
-                                <label className="font-tech mb-1.5 block text-[10px] font-black uppercase tracking-[0.2em] text-gray-700 dark:text-zinc-300">
+                                <label className="font-brand mb-1.5 block text-sm uppercase tracking-[0.16em] text-gray-700 dark:text-zinc-300">
                                     Email Address
                                 </label>
                                 <input
@@ -288,7 +288,7 @@ const Contact = () => {
                         </div>
 
                         <div className="mb-6 transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1">
-                            <label className="font-tech mb-1.5 block text-[10px] font-black uppercase tracking-[0.2em] text-gray-700 dark:text-zinc-300">
+                            <label className="font-brand mb-1.5 block text-sm uppercase tracking-[0.16em] text-gray-700 dark:text-zinc-300">
                                 Message Context
                             </label>
                             <textarea
@@ -321,7 +321,7 @@ const Contact = () => {
                         <motion.button
                             type="submit"
                             disabled={isSending}
-                            className="font-brand group relative flex w-full items-center justify-center gap-3 overflow-hidden !rounded-full bg-gradient-to-r from-[#7c4dff] via-blue-600 to-[#5c6bc0] px-6 py-3.5 text-base font-bold uppercase tracking-widest text-white shadow-lg transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[#7c4dff]/40 disabled:cursor-not-allowed disabled:opacity-75"
+                            className="font-brand group relative flex w-full items-center justify-center gap-3 overflow-hidden !rounded-full bg-gradient-to-r from-[#7c4dff] via-blue-600 to-[#5c6bc0] px-6 py-3.5 text-base uppercase tracking-widest text-white shadow-lg transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[#7c4dff]/40 disabled:cursor-not-allowed disabled:opacity-75"
                             whileTap={{scale: 0.99}}
                         >
                             {isSending ? (
@@ -347,7 +347,7 @@ const Contact = () => {
                         <div className="rounded-[2rem] border border-white/80 bg-white/80 p-6 shadow-xl backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 dark:border-zinc-800 dark:bg-zinc-900/85">
                             <div className="mb-5 flex items-center gap-2">
                                 <BriefcaseBusiness className="text-blue-600 dark:text-yellow-300" size={22}/>
-                                <h2 className="font-display mb-0 text-2xl font-black text-gray-950 dark:text-zinc-50">
+                                <h2 className="font-subheading mb-0 text-2xl text-gray-950 dark:text-zinc-50">
                                     Best Reasons to Reach Out
                                 </h2>
                             </div>
@@ -359,7 +359,7 @@ const Contact = () => {
                                     >
                                         <div className="mb-2 flex items-center gap-2">
                                             <Icon size={18} className="text-green-600 dark:text-green-400"/>
-                                            <h3 className="font-display mb-0 text-base font-black text-gray-950 dark:text-zinc-50">
+                                            <h3 className="font-subheading mb-0 text-base text-gray-950 dark:text-zinc-50">
                                                 {title}
                                             </h3>
                                         </div>
@@ -372,7 +372,7 @@ const Contact = () => {
                         </div>
 
                         <div className="overflow-hidden rounded-[2rem] border border-white/80 bg-white/80 shadow-xl backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 dark:border-zinc-800 dark:bg-zinc-900/85">
-                            <div className="font-tech flex items-center gap-2 px-5 py-4 text-sm font-black text-gray-900 transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1 dark:text-zinc-100">
+                            <div className="font-brand flex items-center gap-2 px-5 py-4 text-sm text-gray-900 transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1 dark:text-zinc-100">
                                 <MapPin className="text-blue-600 dark:text-yellow-300" size={22}/>
                                 Madhubani, Bihar
                             </div>

@@ -66,20 +66,20 @@ export default function Footer() {
                     <div className="mb-8 flex flex-col gap-5 border-b border-gray-200 pb-6 dark:border-zinc-800 md:flex-row md:items-center md:justify-between">
                         <div className="flex items-center justify-center gap-3 md:justify-start">
                             <span>
-                                <span className="font-brand block bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-xl font-black text-transparent">
+                                <span className="font-display block bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-xl text-transparent">
                                     Manish Kumar
                                 </span>
-                                <span className="font-tech block text-xs font-bold uppercase tracking-[0.18em] text-gray-500 dark:text-zinc-400">
+                                <span className="font-brand block text-sm uppercase tracking-[0.16em] text-gray-500 dark:text-zinc-400">
                                     Spring Boot | Hibernate JPA | MySQL | React
                                 </span>
                             </span>
                         </div>
 
                         <div className="text-center md:text-right">
-                            <p className="font-tech mb-1 text-xs font-black uppercase tracking-[0.22em] text-gray-500 dark:text-zinc-400">
+                            <p className="font-brand mb-1 text-sm uppercase tracking-[0.18em] text-gray-500 dark:text-zinc-400">
                                 Engineering Signal
                             </p>
-                            <p className="font-display mb-0 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-lg font-black text-transparent tracking-[0.08em]">
+                            <p className="font-subheading mb-0 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-base tracking-[0.08em] text-transparent">
                                 Backend Discipline, Premium UI, Practical Delivery
                             </p>
                         </div>
@@ -87,20 +87,20 @@ export default function Footer() {
 
                     <div className="grid gap-8 text-center lg:grid-cols-[1.1fr_1fr_1.1fr] lg:text-left">
                         <div className="transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1">
-                            <h2 className="font-display mb-3 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-2xl font-black text-transparent">
+                            <h2 className="font-subheading mb-3 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-2xl text-transparent">
                                 Start With Clear Engineering Context
                             </h2>
-                            <p className="mb-5 text-sm font-medium leading-relaxed text-gray-700 dark:text-zinc-300">
+                            <p className="mb-5 text-base leading-relaxed text-gray-700 dark:text-zinc-300">
                                 I&apos;m open to backend discussions, Spring Boot reviews, REST API work,
                                 SDE opportunities, collaboration, and practical product ideas that need clean execution.
                             </p>
-                            <div className="font-tech inline-flex border-b border-yellow-400 pb-2 text-xs font-black uppercase tracking-[0.08em] text-gray-600 dark:text-zinc-300">
+                            <div className="font-brand inline-flex border-b border-yellow-400 pb-2 text-sm uppercase tracking-[0.08em] text-gray-600 dark:text-zinc-300">
                                 {"spring datasource -> hibernate jpa -> rest api -> react ui"}
                             </div>
                         </div>
 
                         <div className="transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1">
-                            <h3 className="font-tech mb-4 text-sm font-black uppercase tracking-[0.22em] text-gray-500 dark:text-zinc-400">
+                            <h3 className="font-brand mb-4 text-sm uppercase tracking-[0.18em] text-gray-500 dark:text-zinc-400">
                                 Direct Channels
                             </h3>
 
@@ -123,7 +123,7 @@ export default function Footer() {
                         </div>
 
                         <div className="transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1">
-                            <h3 className="font-tech mb-4 text-sm font-black uppercase tracking-[0.22em] text-gray-500 dark:text-zinc-400">
+                            <h3 className="font-brand mb-4 text-sm uppercase tracking-[0.18em] text-gray-500 dark:text-zinc-400">
                                 Digital Footprint
                             </h3>
                             <div className="flex flex-wrap justify-center gap-5 lg:justify-start">
@@ -140,7 +140,7 @@ export default function Footer() {
                                             size={17}
                                             color={social.color}
                                         />
-                                        <span className="font-tech text-[11px] font-black tracking-[0.12em]">
+                                        <span className="font-brand text-sm tracking-[0.1em]">
                                             {social.label}
                                         </span>
                                     </a>
@@ -149,7 +149,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-gray-200 pt-5 text-center text-xs text-gray-600 dark:border-zinc-800 dark:text-zinc-400 md:flex-row">
+                    <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-gray-200 pt-5 text-center text-sm text-gray-600 dark:border-zinc-800 dark:text-zinc-400 md:flex-row">
                         <p className="mb-0">
                             © 2026 Manish Kumar. Spring-ready SDE portfolio.
                         </p>

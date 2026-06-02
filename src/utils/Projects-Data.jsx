@@ -4,7 +4,7 @@ export const projects = [
     {
         title: "💰 Money Manager Full Stack",
         description: (
-            <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
                 <p>
                     A comprehensive <span className="font-bold text-gray-900">Personal Finance Management System</span> designed
                     to help users track their financial health with precision.
@@ -45,7 +45,7 @@ export const projects = [
     {
         title: "🏡 Airbnb Full Stack Clone",
         description: (
-            <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
                 <p>
                     A fully functional <span
                         className="font-bold text-gray-900">Airbnb Clone</span> replicating
@@ -81,9 +81,50 @@ export const projects = [
         technologies: ["Spring Boot", "React", "PostgreSQL", "Tailwind CSS", "JWT", "Docker"],
     },
     {
+        title: "🔗 Industry-Level Microservice Template",
+        description: (
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
+                <p>
+                    A production-ready <span className="font-bold text-gray-900">microservice starter platform</span> that
+                    removes repetitive setup work so teams can focus on product-specific features.
+                </p>
+                <p>
+                    Includes <span className="text-blue-600 font-semibold text-sm uppercase tracking-tighter">JWT security, OAuth2, role-based access, Kafka, and Redis</span>,
+                    plus sessions, notifications, file storage, payments, audit logs, and AI chat.
+                </p>
+                <p>
+                    Ships with <span className="font-bold text-gray-900">React, PostgreSQL, Docker Compose, Kubernetes manifests</span>,
+                    and observability tooling with Prometheus, Grafana, and Zipkin.
+                </p>
+            </div>
+        ),
+        images: [
+            "/images/Microservice-Template/Home.png",
+            "/images/Microservice-Template/Login.png",
+            "/images/Microservice-Template/Signup.png",
+            "/images/Microservice-Template/Dashboard.png",
+            "/images/Microservice-Template/Profile.png",
+            "/images/Microservice-Template/User.png",
+            "/images/Microservice-Template/AI-Chat.png",
+            "/images/Microservice-Template/Audit.png",
+            "/images/Microservice-Template/Files.png",
+            "/images/Microservice-Template/Loki-logs.png",
+            "/images/Microservice-Template/Notifications.png",
+            "/images/Microservice-Template/Observability.png",
+            "/images/Microservice-Template/Otp.png",
+            "/images/Microservice-Template/Sessions.png",
+            "/images/Microservice-Template/Stripe.png",
+            "/images/Microservice-Template/Test-API.png",
+            "/images/Microservice-Template/Footer.png",
+        ],
+        viewLink: "https://github.com/manishrnl/Microservice-Industry-Level-Boiler-Plate",
+        downloadLink: "https://github.com/manishrnl/Microservice-Industry-Level-Boiler-Plate/archive/refs/heads/main.zip",
+        technologies: ["Spring Boot", "React", "Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes", "Zipkin"],
+    },
+    {
         title: "🔗 LinkedIn Enterprise Microservices",
         description: (
-            <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
                 <p>
                     An enterprise-grade <span className="font-bold text-gray-900">Microservices Architecture</span> project
                     utilizing a distributed system design.
@@ -115,7 +156,7 @@ export const projects = [
     {
         title: "🏦 Complete University Management System",
         description: (
-            <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
                 <p>
                     A massive desktop solution (<span className="font-bold text-gray-900">~30,000 lines of code</span>)
                     handling multi-role university administration.
@@ -149,7 +190,7 @@ export const projects = [
     {
         title: "📘 School Attendance Management System",
         description: (
-            <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
                 <p>
                     A modular <span className="font-bold text-gray-900">Desktop Attendance System</span> designed
                     for role-based management of students and staff.
@@ -180,7 +221,7 @@ export const projects = [
     {
         title: "🌐 Portfolio Website",
         description: (
-            <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
                 <p>
                     A high-performance <span className="font-bold text-gray-900">Interactive Portfolio</span> built
                     to showcase technical skills and project engineering.
@@ -212,7 +253,7 @@ export const projects = [
     {
         title: "🧮 Advanced Multi-Mode Calculator",
         description: (
-            <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
                 <p>
                     A multifunctional <span className="font-bold text-gray-900">Scientific Calculator</span> developed
                     using Java OOP principles.
@@ -241,7 +282,7 @@ export const projects = [
     {
         title: "🏦 Bank Management System",
         description: (
-            <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
                 <p>
                     A robust desktop banking application simulating <span
                         className="font-bold text-gray-900">ATM-style functionality</span> using
@@ -269,7 +310,7 @@ export const projects = [
     {
         title: "🎮 Tic Tac Toe (PvP + AI)",
         description: (
-            <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
                 <p>
                     An interactive game offering <span className="font-bold text-gray-900">Player-vs-Player and AI modes</span> built
                     with JavaFX.
@@ -297,7 +338,7 @@ export const projects = [
     {
         title: "✊ Rock Paper Scissors Game",
         description: (
-            <div className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <div className="font-description space-y-3 text-base leading-7 text-gray-600 md:text-lg">
                 <p>
                     A real-time implementation of <span
                         className="font-bold text-gray-900">Rock-Paper-Scissors</span> using

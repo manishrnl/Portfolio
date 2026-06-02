@@ -21,11 +21,11 @@ export default function ThankYou() {
                     <CheckCircle2 size={34}/>
                 </div>
 
-                <p className="font-tech mb-3 text-xs font-black uppercase tracking-[0.22em] text-gray-500 dark:text-zinc-400">
+                <p className="font-brand mb-3 text-sm uppercase tracking-[0.18em] text-gray-500 dark:text-zinc-400">
                     Mail Delivery Confirmed
                 </p>
 
-                <h1 className="font-display mb-4 text-4xl font-bold leading-tight text-gray-900 dark:text-zinc-50 md:text-5xl">
+                <h1 className="font-display mb-4 text-[40px] font-bold leading-tight text-gray-900 dark:text-zinc-50 md:text-5xl">
                     {"{Email Sent}"}
                     <span className="bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-transparent drop-shadow-[0_0_14px_rgba(124,77,255,0.35)]">
                         {" "}Successfully{" "}
@@ -44,7 +44,7 @@ export default function ThankYou() {
 
                 <Link
                     to="/projects"
-                    className="font-brand group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#7c4dff] via-blue-600 to-[#5c6bc0] px-8 py-3 font-bold uppercase tracking-wider text-white text-decoration-none shadow-lg transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1 hover:shadow-[#7c4dff]/40"
+                    className="font-brand group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#7c4dff] via-blue-600 to-[#5c6bc0] px-8 py-3 uppercase tracking-wider text-white text-decoration-none shadow-lg transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1 hover:shadow-[#7c4dff]/40"
                 >
                     Explore Projects
                     <ArrowRight size={18} className="transition-transform duration-500 group-hover:translate-x-1"/>

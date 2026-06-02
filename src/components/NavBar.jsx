@@ -61,10 +61,10 @@ export default function PremiumNavBar({theme, onToggleTheme}) {
                 <div className="pointer-events-none absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-r from-blue-500 via-fuchsia-500 to-yellow-400 opacity-85" />
                 <Link to="/" className="group flex min-w-0 items-center gap-2 text-decoration-none sm:gap-3">
                     <span className="block min-w-0">
-                        <span className="font-brand block bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-base font-black leading-tight text-transparent drop-shadow-[0_0_10px_rgba(124,77,255,0.35)]">
+                        <span className="font-display block bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-base font-bold leading-tight text-transparent drop-shadow-[0_0_10px_rgba(124,77,255,0.35)]">
                             {"Manish"}
                         </span>
-                        <span className=" block bg-gradient-to-r from-emerald-500 via-blue-500 to-yellow-500 bg-clip-text text-[10px] font-bold leading-tight text-transparent">
+                        <span className="font-brand block bg-gradient-to-r from-emerald-500 via-blue-500 to-yellow-500 bg-clip-text text-sm leading-tight text-transparent">
                             Spring | React | Systems
                         </span>
                     </span>
@@ -78,7 +78,7 @@ export default function PremiumNavBar({theme, onToggleTheme}) {
                             to={item.to}
                             onMouseEnter={() => setHoveredPath(item.to)}
                             onMouseLeave={() => setHoveredPath(location.pathname)}
-                            className="group text-decoration-none relative z-10 overflow-hidden px-1 py-2 text-m tracking-[0.16em] transition-all duration-300 hover:-translate-y-0.5"
+                            className="font-brand group text-decoration-none relative z-10 overflow-hidden px-1 py-2 text-sm tracking-[0.16em] transition-all duration-300 hover:-translate-y-0.5"
                         >
                             <span className={`relative z-10 transition-all duration-300 ${getDesktopLinkColor(item.to)}`}>
                                 {item.label}
@@ -143,7 +143,7 @@ export default function PremiumNavBar({theme, onToggleTheme}) {
                                         <Link
                                             to={item.to}
                                             onClick={() => setMenuOpen(false)}
-                                            className="font-brand block border-b border-zinc-100 px-6 py-4 font-black uppercase tracking-[0.14em] text-zinc-700 transition-all hover:-translate-y-1 hover:translate-x-1 hover:bg-gradient-to-r hover:from-blue-600 hover:via-fuchsia-600 hover:to-yellow-500 hover:bg-clip-text hover:text-transparent active:bg-zinc-100 dark:border-zinc-800 dark:text-zinc-100 dark:active:bg-zinc-800"
+                                            className="font-brand block border-b border-zinc-100 px-6 py-4 text-sm uppercase tracking-[0.14em] text-zinc-700 transition-all hover:-translate-y-1 hover:translate-x-1 hover:bg-gradient-to-r hover:from-blue-600 hover:via-fuchsia-600 hover:to-yellow-500 hover:bg-clip-text hover:text-transparent active:bg-zinc-100 dark:border-zinc-800 dark:text-zinc-100 dark:active:bg-zinc-800"
                                         >
                                             {item.label}
                                         </Link>

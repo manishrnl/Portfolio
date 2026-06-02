@@ -37,16 +37,14 @@ export default function Motto() {
                         alt="Om Images"
                     />
                 </div>
-                {/* Reduced text size from text-xl to text-sm/base and padding */}
-                <h2 className="font-tech font-black text-sm md:text-base uppercase tracking-[0.25em] text-blue-800 pt-3 dark:text-yellow-300">
+                <h2 className="font-brand pt-3 text-sm uppercase tracking-[0.2em] text-blue-800 dark:text-yellow-300">
                     Core Philosophy
                 </h2>
             </div>
 
             <div className="space-y-4">
-                {/* Scaled down quote from text-3xl to text-xl/2xl */}
                 <motion.p
-                    className="font-display text-xl md:text-2xl font-bold text-yellow-800 leading-relaxed pt-4 dark:text-yellow-200"
+                    className="font-subheading pt-4 text-2xl leading-relaxed text-yellow-800 dark:text-yellow-200 md:text-3xl"
                 >
                     "{randomQuote.sa}"
                 </motion.p>
@@ -58,12 +56,10 @@ export default function Motto() {
                 </div>
 
                 <div className="space-y-2 px-4">
-                    {/* Hindi translation scaled from text-2xl to text-lg */}
-                    <p className="font-display text-base md:text-lg text-gray-900 font-medium pt-4 dark:text-zinc-100">
+                    <p className="pt-4 text-base text-gray-900 dark:text-zinc-100 md:text-lg">
                         {randomQuote.hi}
                     </p>
-                    {/* English translation scaled from text-2xl to text-base/lg */}
-                    <p className="text-lg md:text-xl font-semibold text-shadow-red-500 leading-snug pt-2 dark:text-zinc-300">
+                    <p className="pt-2 text-base leading-snug text-shadow-red-500 dark:text-zinc-300 md:text-lg">
                         {randomQuote.en}
                     </p>
                 </div>
@@ -81,8 +77,7 @@ export default function Motto() {
                 }}
                 viewport={{once: true}}
             >
-                {/* Reduced footer text from text-3xl to text-lg/xl */}
-                <p className="font-tech text-lg md:text-xl text-black tracking-widest uppercase mt-2 dark:text-zinc-100">
+                <p className="font-brand mt-2 text-sm uppercase tracking-widest text-black dark:text-zinc-100">
                     Spring | Systems | Interfaces
                 </p>
             </motion.div>

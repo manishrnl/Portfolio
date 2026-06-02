@@ -57,23 +57,23 @@ const openInNewPage = (type, href) => {
 
                     {/* Hero Text */}
                     <div className="text-center lg:text-left flex-grow w-full">
-                        <h3 className="font-display text-xl font-semibold text-gray-600 mb-1 dark:text-zinc-300">
+                        <h3 className="font-subheading mb-2 text-2xl text-gray-600 dark:text-zinc-300 md:text-3xl">
                             Hey, I&apos;m Manish Kumar
                         </h3>
 
-                        <h1 className="font-display text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4 dark:text-zinc-50">
+                        <h1 className="font-display mb-5 text-4xl font-bold leading-[1.05] text-gray-900 dark:text-zinc-50 sm:text-[64px] xl:text-[72px]">
                             {"{Spring-Ready Backend}"}
                             <span className="bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-transparent drop-shadow-[0_0_14px_rgba(124,77,255,0.35)]"> Engineering Aspirant </span>
                             <span className="text-blue-600">{"</>"}</span>
                         </h1>
 
-                        <h4 className="font-tech text-sm text-gray-700 mb-3 dark:text-zinc-300">
+                        <h4 className="font-subheading mb-4 text-base text-gray-700 dark:text-zinc-300 md:text-lg">
                             Specializing in{" "}
                             <span className="font-semibold text-gray-900 dark:text-zinc-50">Scalable Microservices</span> and{" "}
                             <span className="font-semibold text-gray-900 dark:text-zinc-50">AI-driven Backend Systems</span>.
                         </h4>
 
-                        <p className="text-sm md:text-base text-gray-600 leading-relaxed max-w-3xl dark:text-zinc-300">
+                        <p className="max-w-3xl text-base leading-relaxed text-gray-600 dark:text-zinc-300 md:text-lg">
                             Architecting distributed platforms with{" "}
                             <strong className="font-tech font-bold text-blue-500 underline decoration-blue-400 decoration-2 underline-offset-4">
                                 Spring Boot
@@ -86,7 +86,7 @@ const openInNewPage = (type, href) => {
                             </strong> to optimize system reliability and performance.
                         </p>
 
-                        <p className="text-sm md:text-base text-gray-600 leading-relaxed max-w-3xl mt-4 dark:text-zinc-300">
+                        <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-600 dark:text-zinc-300 md:text-lg">
                             I focus on backend systems that are easy to extend, easy to deploy, and
                             clear for other developers to understand. My work combines API design,
                             database modeling, caching, authentication, and clean React interfaces so
@@ -99,7 +99,7 @@ const openInNewPage = (type, href) => {
                                 "Database-first thinking for real use cases",
                                 "Deployment-ready Docker workflows",
                             ].map((item) => (
-                                <div key={item} className="font-tech rounded-2xl border border-gray-100 bg-white/70 px-4 py-3 text-xs font-semibold text-gray-700 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:bg-blue-50 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/70 dark:text-zinc-200 dark:hover:bg-zinc-800">
+                                <div key={item} className="font-brand rounded-2xl border border-gray-100 bg-white/70 px-4 py-3 text-sm text-gray-700 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:bg-blue-50 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/70 dark:text-zinc-200 dark:hover:bg-zinc-800">
                                     {item}
                                 </div>
                             ))}
@@ -114,7 +114,7 @@ const openInNewPage = (type, href) => {
                               whileTap={{scale: 0.95}}
                               className="font-brand group hover:translate-x-2 hover:-translate-y-2
                               flex items-center justify-center gap-2
-                              bg-gray-900 text-white px-6 py-2.5 !rounded-full font-bold
+                              bg-gray-900 text-white px-6 py-2.5 !rounded-full font-medium
                               text-base shadow-lg transition-all disabled:opacity-80"
                           >
                               {loading.projects ? (
@@ -143,7 +143,7 @@ const openInNewPage = (type, href) => {
                                 className="font-brand group hover:translate-x-2 hover:-translate-y-2 flex
                                 items-center
                                 justify-center gap-2
-                                bg-white border-2 border-gray-200 text-gray-700 px-6 py-2.5 !rounded-full font-bold text-base hover:border-blue-600 hover:text-blue-600 min-w-[180px] transition-all disabled:opacity-80 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:border-yellow-400 dark:hover:text-yellow-300"
+                                bg-white border-2 border-gray-200 text-gray-700 px-6 py-2.5 !rounded-full font-medium text-base hover:border-blue-600 hover:text-blue-600 min-w-[180px] transition-all disabled:opacity-80 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:border-yellow-400 dark:hover:text-yellow-300"
                             >
                                 {loading.contact ? (
                                     <><Loader2 className="w-4 h-4 animate-spin"/> Navigating...</>
@@ -164,7 +164,7 @@ const openInNewPage = (type, href) => {
                                 whileHover={{scale: 1.05}}
                                 whileTap={{scale: 0.95}}
                                 className="font-brand group hover:translate-x-2 hover:-translate-y-2
-                                flex items-center justify-center gap-2 bg-blue-100 text-blue-700 hover:bg-blue-300 hover:text-green-950 px-6 py-2.5 !rounded-full font-bold text-base min-w-[180px] transition-all disabled:opacity-80"
+                                flex items-center justify-center gap-2 bg-blue-100 text-blue-700 hover:bg-blue-300 hover:text-green-950 px-6 py-2.5 !rounded-full font-medium text-base min-w-[180px] transition-all disabled:opacity-80"
                             >
                                 {loading.resume ? (
                                     <><Loader2 className="w-4 h-4 animate-spin"/> Opening CV...</>
@@ -204,7 +204,7 @@ const openInNewPage = (type, href) => {
                             <h3 className="font-display text-2xl font-extrabold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors dark:text-zinc-50 dark:group-hover:text-yellow-300">
                                 {stat.value}
                             </h3>
-                            <p className="font-tech text-gray-500 font-medium tracking-wide uppercase text-[10px] dark:text-zinc-400">
+                            <p className="font-brand text-sm uppercase tracking-wide text-gray-500 dark:text-zinc-400">
                                 {stat.label}
                             </p>
                         </motion.div>

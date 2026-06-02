@@ -142,7 +142,7 @@ const Projects = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="font-display mb-5 text-4xl font-bold leading-tight text-gray-900 dark:text-zinc-50 md:text-6xl"
+                    className="font-display mb-5 text-[40px] font-bold leading-tight text-gray-900 dark:text-zinc-50 md:text-5xl"
                 >
                     {"{Production Builds}"}
                     <span className="bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-transparent drop-shadow-[0_0_14px_rgba(124,77,255,0.35)]">
@@ -150,11 +150,11 @@ const Projects = () => {
                     </span>
                     <span className="text-blue-600 dark:text-yellow-300">{"</>"}</span>
                 </motion.h2>
-                <p className="text-gray-500 text-lg max-w-xl mx-auto font-light italic dark:text-zinc-400">
+                <p className="mx-auto max-w-xl text-base font-light italic text-gray-500 dark:text-zinc-400">
                     "From system architecture to user experience—engineered for
                     scalability."
                 </p>
-                <p className="text-gray-600 text-base max-w-3xl mx-auto mt-5 leading-relaxed dark:text-zinc-300">
+                <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-gray-600 dark:text-zinc-300 md:text-lg">
                     These projects show the way I think through software: start with a real
                     workflow, design the data and services, secure the core actions, then polish
                     the interface with screenshots, deployment links, and source code for review.
@@ -165,7 +165,7 @@ const Projects = () => {
                         "Real screenshots for every important workflow",
                         "Clear technology choices and source links",
                     ].map((item) => (
-                        <div key={item} className="font-tech rounded-2xl border border-gray-100 bg-white/70 px-4 py-3 text-m font-semibold text-gray-700 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:bg-blue-50 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/70 dark:text-zinc-200 dark:hover:bg-zinc-800">
+                        <div key={item} className="font-brand rounded-2xl border border-gray-100 bg-white/70 px-4 py-3 text-sm text-gray-700 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:bg-blue-50 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/70 dark:text-zinc-200 dark:hover:bg-zinc-800">
                             {item}
                         </div>
                     ))}
@@ -228,11 +228,11 @@ const Projects = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                 >
-                                    <h3 className="font-display text-3xl md:text-4xl font-black text-gray-950 mb-4 tracking-tight dark:text-zinc-50">
+                                    <h3 className="font-subheading mb-4 text-2xl tracking-tight text-gray-950 dark:text-zinc-50 md:text-3xl">
                                         {p.title}
                                     </h3>
 
-                                    <div className="mb-6 rounded-2xl text-sm md:text-base text-gray-700 leading-relaxed transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1">
+                                    <div className="mb-6 rounded-2xl text-base leading-relaxed text-gray-700 transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1 md:text-lg">
                                         {p.description}
                                     </div>
 
@@ -240,7 +240,7 @@ const Projects = () => {
                                         {p.technologies.map((tech, i) => (
                                             <span
                                                 key={i}
-                                                className="font-tech px-3 py-1.5 bg-gray-50 border border-gray-400 text-gray-800 text-xs font-bold rounded-full uppercase transition-colors hover:bg-yellow-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-yellow-400 dark:hover:text-zinc-950"
+                                                className="font-brand rounded-full border border-gray-400 bg-gray-50 px-3 py-1.5 text-sm uppercase text-gray-800 transition-colors hover:bg-yellow-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-yellow-400 dark:hover:text-zinc-950"
                                             >
                                                 {tech}
                                             </span>
@@ -254,7 +254,7 @@ const Projects = () => {
                                                 href={p.runLink}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="font-brand group relative isolate flex min-w-[132px] items-center justify-center gap-2 overflow-hidden rounded-full border border-white/60 bg-gradient-to-r from-blue-600 via-[#7c4dff] to-fuchsia-600 px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-white shadow-[0_14px_34px_rgba(37,99,235,0.28)] transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:shadow-[0_20px_48px_rgba(124,77,255,0.35)] text-decoration-none dark:border-zinc-700"
+                                                className="font-brand group relative isolate flex min-w-[132px] items-center justify-center gap-2 overflow-hidden rounded-full border border-white/60 bg-gradient-to-r from-blue-600 via-[#7c4dff] to-fuchsia-600 px-5 py-3 text-sm uppercase tracking-[0.12em] text-white shadow-[0_14px_34px_rgba(37,99,235,0.28)] transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:shadow-[0_20px_48px_rgba(124,77,255,0.35)] text-decoration-none dark:border-zinc-700"
                                             >
                                                 <span className="absolute inset-0 -z-10 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full"></span>
                                                 <ExternalLink
@@ -268,7 +268,7 @@ const Projects = () => {
                                             href={p.viewLink}
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="font-brand group relative isolate flex min-w-[132px] items-center justify-center gap-2 overflow-hidden rounded-full border border-zinc-900/10 bg-zinc-950 px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-white shadow-[0_14px_34px_rgba(24,24,27,0.24)] transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:bg-black hover:shadow-[0_20px_48px_rgba(24,24,27,0.32)] text-decoration-none dark:border-zinc-700 dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white"
+                                            className="font-brand group relative isolate flex min-w-[132px] items-center justify-center gap-2 overflow-hidden rounded-full border border-zinc-900/10 bg-zinc-950 px-5 py-3 text-sm uppercase tracking-[0.12em] text-white shadow-[0_14px_34px_rgba(24,24,27,0.24)] transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:bg-black hover:shadow-[0_20px_48px_rgba(24,24,27,0.32)] text-decoration-none dark:border-zinc-700 dark:bg-zinc-100 dark:text-zinc-950 dark:hover:bg-white"
                                         >
                                             <span className="absolute inset-0 -z-10 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full dark:via-zinc-900/10"></span>
                                             <DiGithubBadge
@@ -280,7 +280,7 @@ const Projects = () => {
                                         <a
                                             href={p.downloadLink}
                                             download
-                                            className="font-brand group relative isolate flex min-w-[132px] items-center justify-center gap-2 overflow-hidden rounded-full border border-white/60 bg-gradient-to-r from-emerald-600 via-green-600 to-lime-500 px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-white shadow-[0_14px_34px_rgba(22,163,74,0.25)] transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:shadow-[0_20px_48px_rgba(22,163,74,0.34)] text-decoration-none dark:border-zinc-700"
+                                            className="font-brand group relative isolate flex min-w-[132px] items-center justify-center gap-2 overflow-hidden rounded-full border border-white/60 bg-gradient-to-r from-emerald-600 via-green-600 to-lime-500 px-5 py-3 text-sm uppercase tracking-[0.12em] text-white shadow-[0_14px_34px_rgba(22,163,74,0.25)] transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:shadow-[0_20px_48px_rgba(22,163,74,0.34)] text-decoration-none dark:border-zinc-700"
                                         >
                                             <span className="absolute inset-0 -z-10 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full"></span>
                                             <Download
@@ -317,7 +317,7 @@ const Projects = () => {
                             className="relative z-10 transition-transform duration-700 group-hover:rotate-[360deg]"
                             size={20}
                         />
-                        <span className="relative z-10 font-bold uppercase tracking-wider">
+                        <span className="relative z-10 font-medium uppercase tracking-wider">
                             Explore More Projects
                         </span>
                         <ArrowRight

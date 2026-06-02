@@ -82,7 +82,7 @@ const Resume = () => {
 
             <div className="relative z-10 mx-auto w-[90%] max-w-[1500px]">
                 <div className="mb-10 text-center">
-                    <h1 className="font-display mx-auto mb-5 max-w-5xl text-4xl font-bold leading-tight text-gray-900 dark:text-zinc-50 md:text-6xl">
+                    <h1 className="font-display mx-auto mb-5 max-w-5xl text-[40px] font-bold leading-tight text-gray-900 dark:text-zinc-50 md:text-5xl">
                         {"{Career Profile}"}
                         <span className="bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-transparent drop-shadow-[0_0_14px_rgba(124,77,255,0.35)]">
                             {" "}Resume Snapshot{" "}
@@ -101,10 +101,10 @@ const Resume = () => {
                             key={item.label}
                             className="rounded-2xl border border-white/80 bg-white/75 p-4 shadow-sm backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1 hover:bg-blue-50 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/75 dark:hover:bg-zinc-800"
                         >
-                            <p className="font-tech mb-1 text-[10px] font-black uppercase tracking-[0.22em] text-gray-500 dark:text-zinc-400">
+                            <p className="font-brand mb-1 text-sm uppercase tracking-[0.18em] text-gray-500 dark:text-zinc-400">
                                 {item.label}
                             </p>
-                            <p className="font-display mb-0 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-lg font-black text-transparent">
+                            <p className="font-subheading mb-0 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-lg text-transparent">
                                 {item.value}
                             </p>
                         </div>
@@ -128,18 +128,18 @@ const Resume = () => {
                                     decoding="async"
                                 />
                             </span>
-                            <span className="rounded-full border border-green-200 bg-green-50 px-3 py-1 text-xs font-bold text-green-700 dark:border-green-500/30 dark:bg-green-500/10 dark:text-green-300">
+                            <span className="font-brand rounded-full border border-green-200 bg-green-50 px-3 py-1 text-sm text-green-700 dark:border-green-500/30 dark:bg-green-500/10 dark:text-green-300">
                                 Open to Backend SDE roles
                             </span>
                         </div>
 
-                        <h2 className="font-display mb-3 text-3xl font-black tracking-tight text-gray-950 dark:text-zinc-50">
+                        <h2 className="font-subheading mb-3 text-2xl tracking-tight text-gray-950 dark:text-zinc-50">
                             Manish Kumar
                         </h2>
-                        <p className="font-tech mb-5 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-sm font-black text-transparent">
+                        <p className="font-brand mb-5 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 bg-clip-text text-sm text-transparent">
                             Software Development Engineer Aspirant
                         </p>
-                        <p className="mb-6 text-sm leading-relaxed text-gray-600 dark:text-zinc-300">
+                        <p className="mb-6 text-base leading-relaxed text-gray-600 dark:text-zinc-300">
                             Backend-focused full-stack developer who turns learning into shipped projects.
                             I care about clean APIs, reliable data flow, readable code, and interfaces that
                             make the technical work easy to understand.
@@ -149,7 +149,7 @@ const Resume = () => {
                             {["Java ecosystem", "Spring Boot APIs", "React dashboards", "Database-backed systems"].map((item) => (
                                 <div
                                     key={item}
-                                    className="font-tech flex items-center gap-3 rounded-2xl border border-gray-100 bg-gray-50 px-4 py-3 text-xs font-bold text-gray-700 transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1 hover:bg-blue-50 dark:border-zinc-800 dark:bg-zinc-950/60 dark:text-zinc-200 dark:hover:bg-zinc-900"
+                                    className="font-brand flex items-center gap-3 rounded-2xl border border-gray-100 bg-gray-50 px-4 py-3 text-sm text-gray-700 transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1 hover:bg-blue-50 dark:border-zinc-800 dark:bg-zinc-950/60 dark:text-zinc-200 dark:hover:bg-zinc-900"
                                 >
                                     <CheckCircle2 size={17} className="shrink-0 text-green-600 dark:text-green-400"/>
                                     {item}
@@ -164,11 +164,11 @@ const Resume = () => {
                         transition={{duration: 0.65, delay: 0.08}}
                         className="rounded-[2rem] border border-white/80 bg-white/80 p-6 shadow-xl backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 dark:border-zinc-800 dark:bg-zinc-900/85 dark:hover:bg-zinc-800 md:p-8"
                     >
-                        <div className="font-tech mb-6 inline-flex items-center gap-2 rounded-full border border-yellow-200 bg-yellow-50 px-4 py-2 text-xs font-black uppercase tracking-[0.2em] text-yellow-800 dark:border-yellow-500/30 dark:bg-yellow-500/10 dark:text-yellow-300">
+                        <div className="font-brand mb-6 inline-flex items-center gap-2 rounded-full border border-yellow-200 bg-yellow-50 px-4 py-2 text-sm uppercase tracking-[0.16em] text-yellow-800 dark:border-yellow-500/30 dark:bg-yellow-500/10 dark:text-yellow-300">
                             <Sparkles size={15}/>
                             Professional Summary
                         </div>
-                        <h2 className="font-display mb-5 text-3xl font-black leading-tight text-gray-950 dark:text-zinc-50 md:text-4xl">
+                        <h2 className="font-subheading mb-5 text-2xl leading-tight text-gray-950 dark:text-zinc-50 md:text-3xl">
                             Backend systems, clean interfaces, and project execution in one profile.
                         </h2>
                         <p className="mb-5 text-base leading-relaxed text-gray-700 dark:text-zinc-300 md:text-lg">
@@ -188,7 +188,7 @@ const Resume = () => {
                                     key={area.title}
                                     className="rounded-2xl border border-gray-100 bg-gray-50 p-4 transition-all duration-500 ease-out hover:-translate-y-1 hover:translate-x-1 hover:bg-blue-50 dark:border-zinc-800 dark:bg-zinc-950/60 dark:hover:bg-zinc-900"
                                 >
-                                    <h3 className="font-display mb-2 text-base font-black text-blue-700 dark:text-yellow-300">
+                                    <h3 className="font-subheading mb-2 text-base text-blue-700 dark:text-yellow-300">
                                         {area.title}
                                     </h3>
                                     <p className="mb-0 text-sm leading-relaxed text-gray-600 dark:text-zinc-300">
@@ -207,7 +207,7 @@ const Resume = () => {
                     >
                         <div className="mb-5 flex items-center gap-2">
                             <Rocket className="text-blue-600 dark:text-yellow-300" size={22}/>
-                                <h2 className="font-display mb-0 text-2xl font-black text-gray-950 dark:text-zinc-50">
+                                <h2 className="font-subheading mb-0 text-2xl text-gray-950 dark:text-zinc-50">
                                 Impact Signals
                             </h2>
                         </div>
@@ -231,7 +231,7 @@ const Resume = () => {
                             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 text-white shadow-lg transition-transform duration-500 group-hover:rotate-6">
                                 <Icon size={22}/>
                             </div>
-                            <h3 className="font-display mb-2 text-lg font-black text-gray-950 dark:text-zinc-50">{title}</h3>
+                            <h3 className="font-subheading mb-2 text-lg text-gray-950 dark:text-zinc-50">{title}</h3>
                             <p className="mb-0 text-sm leading-relaxed text-gray-600 dark:text-zinc-300">{detail}</p>
                         </article>
                     ))}
@@ -243,10 +243,10 @@ const Resume = () => {
                             key={project.title}
                             className="rounded-[1.5rem] border border-white/80 bg-white/75 p-5 shadow-sm backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 hover:bg-blue-50 dark:border-zinc-800 dark:bg-zinc-900/75 dark:hover:bg-zinc-800"
                         >
-                            <p className="font-tech mb-2 text-[10px] font-black uppercase tracking-[0.22em] text-gray-500 dark:text-zinc-400">
+                            <p className="font-brand mb-2 text-sm uppercase tracking-[0.18em] text-gray-500 dark:text-zinc-400">
                                 Project Evidence
                             </p>
-                            <h3 className="font-display mb-2 text-xl font-black text-[#7c4dff] dark:text-yellow-300">
+                            <h3 className="font-subheading mb-2 text-xl text-[#7c4dff] dark:text-yellow-300">
                                 {project.title}
                             </h3>
                             <p className="mb-0 text-sm leading-relaxed text-gray-600 dark:text-zinc-300">
@@ -258,10 +258,10 @@ const Resume = () => {
 
                 <div className="mt-8 flex flex-col items-center justify-between gap-5 rounded-[2rem] border border-white/80 bg-gradient-to-r from-blue-600 via-fuchsia-600 to-yellow-500 p-5 shadow-xl backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-2 hover:translate-x-1 dark:border-zinc-800 dark:bg-zinc-900/85 dark:hover:bg-zinc-800 md:flex-row md:p-6">
                     <div>
-                        <p className="mb-1 text-[10px] font-black uppercase tracking-[0.22em] text-white dark:text-zinc-400">
+                        <p className="font-brand mb-1 text-sm uppercase tracking-[0.18em] text-white dark:text-zinc-400">
                             Full Document
                         </p>
-                        <h2 className="mb-1 text-2xl font-black text-white dark:text-zinc-50">
+                        <h2 className="font-subheading mb-1 text-2xl text-white dark:text-zinc-50">
                             View online or download the PDF version.
                         </h2>
                         <p className="mb-0 text-sm leading-relaxed text-white dark:text-zinc-300">
@@ -274,7 +274,7 @@ const Resume = () => {
                             href={ResumeLink}
                             target="_blank"
                             rel="noreferrer"
-                            className="font-brand group relative flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#7c4dff] via-blue-600 to-[#5c6bc0] px-6 py-3 text-sm font-bold uppercase tracking-wider text-white shadow-lg transition-all hover:shadow-[#7c4dff]/40 text-decoration-none sm:w-auto"
+                            className="font-brand group relative flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#7c4dff] via-blue-600 to-[#5c6bc0] px-6 py-3 text-sm uppercase tracking-wider text-white shadow-lg transition-all hover:shadow-[#7c4dff]/40 text-decoration-none sm:w-auto"
                             whileHover={{scale: 1.02, y: -2}}
                             whileTap={{scale: 0.98}}
                         >
@@ -284,7 +284,7 @@ const Resume = () => {
                         <a
                             href={ResumeDownloadLink}
                             download="Manish-Kumar-Resume.pdf"
-                            className="font-brand group flex w-full items-center justify-center gap-2 rounded-full border-2 border-gray-200 bg-white px-6 py-3 text-sm font-bold uppercase tracking-wider text-gray-700 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-600 hover:text-blue-600 text-decoration-none dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:border-yellow-400 dark:hover:text-yellow-300 sm:w-auto"
+                            className="font-brand group flex w-full items-center justify-center gap-2 rounded-full border-2 border-gray-200 bg-white px-6 py-3 text-sm uppercase tracking-wider text-gray-700 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-600 hover:text-blue-600 text-decoration-none dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:border-yellow-400 dark:hover:text-yellow-300 sm:w-auto"
                         >
                             <Download size={18}/>
                             Download Resume
